@@ -21,6 +21,7 @@ class MyWidget(QtWidgets.QWidget):
 
         self.intro = "Drag CNKI file(s) here\nEndNote supported only"
         self.dump_path = ''
+        self.item_count = 0
 
         self.setWindowTitle("Converter - by cms")
         self.setFixedSize(230, 120)
@@ -38,7 +39,10 @@ class MyWidget(QtWidgets.QWidget):
         self.setLayout(self.layout)
 
         self.setAcceptDrops(True)
+        # 保持顶端
         self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+        # 禁止全屏
+        self.setWindowFlag(QtCore.Qt.WindowFullscreenButtonHint, False)
 
     def file_hover(self):
         self.text.setText('Oh yeah, put down')
@@ -48,23 +52,30 @@ class MyWidget(QtWidgets.QWidget):
 
     def convert_file(self, filepath):
         try:
-            self.dump_path = converter(filepath)
-        except Exception as e:
-            err = QtWidgets.QMessageBox(self)
-            err.setIcon(QtWidgets.QMessageBox.Critical)
-            err.setText('Is it an EndNote format text file?')
-            err.setInformativeText(
-                'You must drag an EndNote format reference file here.')
-            err.setWindowTitle('Error')
-            err.exec_()
+            self.dump_path, self.item_count = converter(filepath)
+        except Exception:
+            self.show_msg(
+                'Error', 'Is it an EndNote format text file?',
+                'You must drag an EndNote format reference file here.',
+                QtWidgets.QMessageBox.Critical
+            )
         else:
-            reply = QtWidgets.QMessageBox.information(
-                self, 'Done', 'Converted file: {}'.format(self.dump_path), QtWidgets.QMessageBox.Ok)
+            self.show_msg(
+                'Success', 'Converted success!',
+                'RefMan reference file: {}\n\nOverall {} entries.'.format(
+                    self.dump_path, self.item_count)
+            )
         finally:
             self.file_unhover()
 
-    def show_error(self):
-        pass
+    def show_msg(self, title, text, information, icon=None):
+        msg = QtWidgets.QMessageBox(self)
+        msg.setWindowTitle(title)
+        if icon:
+            msg.setIcon(QtWidgets.QMessageBox.Information)
+        msg.setInformativeText(information)
+        msg.setText(text)
+        msg.exec_()
 
     def dragEnterEvent(self, e):
         if e.mimeData().hasUrls():
@@ -75,7 +86,7 @@ class MyWidget(QtWidgets.QWidget):
         urls = e.mimeData().urls()
         self.file_unhover()
         self.text.setText("converting, plz wait...")
-        for index, url in enumerate(urls):
+        for url in urls:
             self.convert_file(url.toLocalFile())
 
     def dragLeaveEvent(self, e):
@@ -85,7 +96,5 @@ class MyWidget(QtWidgets.QWidget):
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     widget = MyWidget()
-
     widget.show()
-
     sys.exit(app.exec_())

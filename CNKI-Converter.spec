@@ -23,15 +23,15 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='main',
+          name='CNKI-Converter',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False )
+          console=False , icon='icon.icns')
 app = BUNDLE(exe,
-             name='main.app',
-             icon=None,
-             bundle_identifier=None)
+             name='CNKI-Converter.app',
+             icon='./icon.icns',
+             bundle_identifier='cnki-converter')

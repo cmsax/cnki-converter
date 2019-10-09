@@ -1,0 +1,526 @@
+TY - JOUR
+A1 - 吴继琴
+AB - “一带一路”倡议背景下,江西企业“走出去”取得巨大成绩。如何利用通事语言降低跨文化冲突带来的经营风险,成为江西企业“走出去”必须认真面对且亟待解决的重要课题。本文以江西企业“走出去”通事语言为例,借鉴Fairclough三维分析模型,从描述、阐释和解释三个阶段进行话语分析,从而证实Fairclough三维分析模型具有适用性和解释性,也为江西企业“走出去”通事语言问题研究提供新思路。
+T1 - Fairclough三维分析模型下的话语分析——以江西企业“走出去”通事语言为例
+Y1 - 2019
+JO - 九江职业技术学院学报
+SP - 1
+EP - 5
+ER - 
+
+
+
+TY - JOUR
+A1 - 赵亚欧
+A1 - 张家重
+A1 - 李贻斌
+A1 - 付宪瑞
+A1 - 生伟
+AB - 针对Word2Vec、Glo Ve等词嵌入技术只能产生单一语义向量的问题,提出一种融合ELMo和多尺度卷积神经网络的情感分析模型。首先,该模型利用ELMo模型学习预训练语料,生成上下文相关的词向量;相比于传统词嵌入技术,ELMo模型利用双向LSTM网络融合词语本身特征和词语上下文特征,能够精确表示多义词的多个不同语义。此外,该模型使用预训练的中文字符向量初始化ELMo模型的嵌入层,相对于随机初始化,该方法可加快模型的训练速度,提高训练精度。然后,该模型利用多尺度卷积神经网络,对词向量的特征进行二次抽取,并进行特征融合,生成句子的整体语义表示;最后,经过softmax激励函数实现文本情感倾向的分类。实验在公开的酒店评论和NLPCC2014 task2两个数据集上进行,实验结果表明,在酒店评论数据集上与基于注意力的双向LSTM模型相比,该模型正确率提升了1.08个百分点,在NLPCC2014 task2数据集上与LSTM和CNN的混合模型相比,该模型正确率提升了2.16个百分点,证明了所提方法的有效性。
+T1 - 融合ELMo和多尺度卷积神经网络的情感分析
+JO - 计算机应用
+SP - 1
+EP - 9
+ER - 
+
+
+
+TY - JOUR
+A1 - 王鑫
+A1 - 宋永红
+A1 - 张元林
+AB - 图像描述(Image Captioning)是一个融合了计算机视觉和自然语言处理这两个领域的研究方向,本文为图像描述设计了一种新颖的显著性特征提取机制(Salient Feature Extraction Mechanism,SFEM),能够在语言模型预测每一个单词之前快速地向语言模型提供最有价值的视觉特征来指导单词预测,有效解决了现有方法对视觉特征选择不准确以及时间性能不理想的问题. SFEM包含全局显著性特征提取器和即时显著性特征提取器这两个部分:全局显著性特征提取器能够从多个局部视觉向量中提取出显著性视觉特征,并整合这些特征到全局显著性视觉向量中;即时显著性特征提取器能够根据语言模型的需要,从全局显著性视觉向量中提取出预测每一个单词所需的显著性视觉特征.我们在MS COCO数据集上对SFEM进行了评估,实验结果表明SFEM能够显著提升baseline生成图像描述的准确性,并且SFEM在生成图像描述的准确性方面明显优于广泛使用的空间注意力模型,在时间性能上也大幅领先空间注意力模型.
+T1 - 基于显著性特征提取的图像描述算法
+JO - 自动化学报
+SP - 1
+EP - 12
+ER - 
+
+
+
+TY - JOUR
+A1 - Meghan M. Parkinson
+A1 - Daniel L. Dinsmore
+AB - Abstract(#br)This article uses the Model of Domain Learning as a framework to better understand the developmental nature of students’ second language acquisition and teaching and learning of foreign languages. This examination includes the development of knowledge, strategies, and interest through the stages of expertise in the MDL – namely acclimation, competence, and proficiency/expertise. What encapsulates knowledge, strategies, and interest in the second language acquisition and previous empirical research that supports these developmental notions are overviewed. Finally, directions for future research and practical implications are discussed in light of the developmental nature of expertise development in second language acquisition and foreign language teaching and learning.
+T1 - Understanding the developmental trajectory of second language acquisition and foreign language teaching and learning using the Model of Domain Learning
+Y1 - 2019
+JO - System
+ER - 
+
+
+
+TY - JOUR
+A1 - Tatsuya Daikoku
+T1 - Computational models and neural bases of statistical learning in music and language
+Y1 - 2019
+JO - Physics of Life Reviews
+ER - 
+
+
+
+TY - JOUR
+A1 - Olga Fourkioti
+A1 - Symeon Symeonidis
+A1 - Avi Arampatzis
+AB - Abstract(#br)We deal with the task of authorship attribution, i.e. identifying the author of an unknown document, proposing the use of Part Of Speech (POS) tags as features for language modeling. The experimentation is carried out on corpora untypical for the task, i.e., with documents edited by non-professional writers, such as movie reviews or tweets. The former corpus is homogeneous with respect to the topic making the task more challenging, The latter corpus, puts language models into a framework of a continuously and fast evolving language, unique and noisy writing style, and limited length of social media messages. While we find that language models based on POS tags are competitive in only one of the corpora (movie reviews), they generally provide efficiency benefits and robustness against data sparsity. Furthermore, we experiment with model fusion, where language models based on different modalities are combined. By linearly combining three language models, based on characters, words, and POS trigrams, respectively, we achieve the best generalization accuracy of 96% on movie reviews, while the combination of language models based on characters and POS trigrams provides 54% accuracy on the Twitter corpus. In fusion, POS language models are proven essential effective components.
+T1 - Language models and fusion for authorship attribution
+Y1 - 2019
+JO - Information Processing and Management
+VL - 56
+ER - 
+
+
+
+TY - JOUR
+A1 - Jacob Raber
+A1 - Shahar Arzy
+A1 - Julie Boulanger Bertolus
+A1 - Brendan Depue
+A1 - Haley E. Haas
+A1 - Stefan G. Hofmann
+A1 - Maria Kangas
+A1 - Elizabeth Kensinger
+A1 - Christopher A. Lowry
+A1 - Hilary A. Marusak
+A1 - Jessica Minnier
+A1 - Anne-Marie Mouly
+A1 - Andreas Mühlberger
+A1 - Seth Davin Norrholm
+A1 - Kirsi Peltonen
+A1 - Graziano Pinna
+A1 - Christine Rabinak
+A1 - Youssef Shiban
+A1 - Hermona Soreq
+A1 - Michael A. van der Kooij
+A1 - Leroy Lowe
+A1 - Leah T. Weingast
+A1 - Paula Yamashita
+A1 - Sydney Weber Boutros
+AB - Abstract(#br)Fear is an emotion that serves as a driving factor in how organisms move through the world. In this review, we discuss the current understandings of the subjective experience of fear and the related biological processes involved in fear learning and memory. We first provide an overview of fear learning and memory in humans and animal models, encompassing the neurocircuitry and molecular mechanisms, the influence of genetic and environmental factors, and how fear learning paradigms have contributed to treatments for fear-related disorders, such as posttraumatic stress disorder. Current treatments as well as novel strategies, such as targeting the perisynaptic environment and use of virtual reality, are addressed. We review research on the subjective experience of fear and the role of autobiographical memory in fear-related disorders. We also discuss the gaps in our understanding of fear learning and memory, and the degree of consensus in the field. Lastly, the development of linguistic tools for assessments and treatment of fear learning and memory disorders is discussed.
+T1 - Current understanding of fear learning and memory in humans and animal models and the value of a linguistic approach for analyzing fear learning and memory in humans
+Y1 - 2019
+JO - Neuroscience and Biobehavioral Reviews
+VL - 105
+ER - 
+
+
+
+TY - JOUR
+A1 - Brianna L. Yamasaki
+A1 - Andrea Stocco
+A1 - Allison S. Liu
+A1 - Chantel S. Prat
+AB - Abstract(#br)Bilingual language control is characterized by the ability to select from amongst competing representations based on the current language in use. According to the Conditional Routing Model (CRM), this feat is underpinned by basal-ganglia signal-routing mechanisms, and may have implications for cognitive flexibility. The current experiment used dynamic causal modeling of fMRI data to compare network-level brain functioning in monolinguals and bilinguals during a task that required productive (semantic decision) and receptive (language) switches. Consistent with the CRM, results showed that: (1) both switch types drove activation in the basal ganglia, (2) bilinguals and monolinguals differed in the strength of influence of dorsolateral prefrontal cortex (DLPFC) on basal ganglia, and (3) differences in bilingual language experience were marginally related to the strength of influence of the switching drives onto basal ganglia. Additionally, a task-by-group interaction was found, suggesting that when bilinguals engaged in language-switching, their task-switching costs were reduced.
+T1 - Effects of bilingual language experience on basal ganglia computations: A dynamic causal modeling test of the conditional routing model
+Y1 - 2019
+JO - Brain and Language
+VL - 197
+ER - 
+
+
+
+TY - JOUR
+A1 - Guo Zhiqiang
+A1 - Ling Zhenhua
+A1 - Li Yunxia
+AB - BACKGROUND(#br)Recently, many studies have been carried out to detect Alzheimer's disease (AD) from continuous speech by linguistic analysis and modeling. However, few of them utilize language models (LMs) to extract linguistic features and to investigate the lexical-level differences between AD and healthy speech.(#br)OBJECTIVE(#br)Our goals include obtaining state-of-art performance of automatic AD detection, emphasizing N-gram LMs as powerful tools for distinguishing AD patients' narratives from those of healthy controls, and discovering the differences of lexical usages between AD patients and healthy people.(#br)METHOD(#br)We utilize a subset of the DementiaBank corpus, including 242 control samples from 99 control participants and 256 AD samples from 169 "PossibleAD" or "ProbableAD" participants. Baseline models are built through area under curve-based feature selection and using five machine learning algorithms for comparison. Perplexity features are extracted using LMs to build enhanced detection models. Finally, the differences of lexical usages between AD patients and healthy people are investigated by a proportion test based on unigram probabilities.(#br)RESULTS(#br)Our baseline model obtains a detection accuracy of 80.7%. This accuracy increases to 85.4% after integrating the perplexity features derived from LMs. Further investigations show that AD patients tend to use more general, less informative, and less accurate words to describe characters and actions than healthy controls.(#br)CONCLUSION(#br)The perplexity features extracted by LMs can benefit the automatic AD detection from continuous speech. There exist lexical-level differences between AD and healthy speech that can be captured by statistical N-gram LMs.
+T1 - Detecting Alzheimer's Disease from Continuous Speech Using Language Models.
+Y1 - 2019
+JO - Journal of Alzheimer's disease : JAD
+VL - 70
+ER - 
+
+
+
+TY - JOUR
+A1 - Daikoku Tatsuya
+T1 - Computational models and neural bases of statistical learning in music and language: Comment on "Creativity, information, and consciousness: The information dynamics of thinking" by Wiggins.
+Y1 - 2019
+JO - Physics of life reviews
+ER - 
+
+
+
+TY - JOUR
+A1 - Kim Judy S
+A1 - Elli Giulia V
+A1 - Bedny Marina
+T1 - Reply to Lewis et al.: Inference is key to learning appearance from language, for humans and distributional semantic models alike.
+Y1 - 2019
+JO - Proceedings of the National Academy of Sciences of the United States of America
+ER - 
+
+
+
+TY - JOUR
+A1 - Lee Jinhyuk
+A1 - Yoon Wonjin
+A1 - Kim Sungdong
+A1 - Kim Donghyeon
+A1 - Kim Sunkyu
+A1 - So Chan Ho
+A1 - Kang Jaewoo
+AB - MOTIVATION(#br)Biomedical text mining is becoming increasingly important as the number of biomedical documents rapidly grows. With the progress in natural language processing, extracting valuable information from biomedical literature has gained popularity among researchers, and deep learning has boosted the development of effective biomedical text mining models. However, directly applying the advancements in natural language processing to biomedical text mining often yields unsatisfactory results due to a word distribution shift from general domain corpora to biomedical corpora. In this paper, we investigate how the recently introduced pre-trained language model BERT can be adapted for biomedical corpora.(#br)RESULTS(#br)We introduce BioBERT (Bidirectional Encoder Representations from Transformers for Biomedical Text Mining), which is a domain specific language representation model pre-trained on large-scale biomedical corpora. With almost the same architecture across tasks, BioBERT largely outperforms BERT and previous state-of-the-art models in a variety of biomedical text mining tasks when pre-trained on biomedical corpora. While BERT obtains performance comparable to that of previous state-of-the-art models, BioBERT significantly outperforms them on the following three representative biomedical text mining tasks: biomedical named entity recognition (0.62% F1 score improvement), biomedical relation extraction (2.80% F1 score improvement), and biomedical question answering (12.24% MRR improvement). Our analysis results show that pre-training BERT on biomedical corpora helps it to understand complex biomedical texts.(#br)AVAILABILITY AND IMPLEMENTATION(#br)We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.(#br)SUPPLEMENTARY INFORMATION(#br)Supplementary data are available at Bioinformatics online.
+T1 - BioBERT: a pre-trained biomedical language representation model for biomedical text mining.
+Y1 - 2019
+JO - Bioinformatics (Oxford, England)
+ER - 
+
+
+
+TY - JOUR
+A1 - Raber Jacob
+A1 - Arzy Shahar
+A1 - Bertolus Julie Boulanger
+A1 - Depue Brendan
+A1 - Haas Haley E
+A1 - Hofmann Stefan G
+A1 - Kangas Maria
+A1 - Kensinger Elizabeth
+A1 - Lowry Christopher A
+A1 - Marusak Hilary A
+A1 - Minnier Jessica
+A1 - Mouly Anne-Marie
+A1 - Mühlberger Andreas
+A1 - Norrholm Seth Davin
+A1 - Peltonen Kirsi
+A1 - Pinna Graziano
+A1 - Rabinak Christine
+A1 - Shiban Youssef
+A1 - Soreq Hermona
+A1 - van der Kooij Michael A
+A1 - Lowe Leroy
+A1 - Weingast Leah T
+A1 - Yamashita Paula
+A1 - Boutros Sydney Weber
+AB - Fear is an emotion that serves as a driving factor in how organisms move through the world. In this review, we discuss the current understandings of the subjective experience of fear and the related biological processes involved in fear learning and memory. We first provide an overview of fear learning and memory in humans and animal models, encompassing the neurocircuitry and molecular mechanisms, the influence of genetic and environmental factors, and how fear learning paradigms have contributed to treatments for fear-related disorders, such as posttraumatic stress disorder. Current treatments as well as novel strategies, such as targeting the perisynaptic environment and use of virtual reality, are addressed. We review research on the subjective experience of fear and the role of autobiographical memory in fear-related disorders. We also discuss the gaps in our understanding of fear learning and memory, and the degree of consensus in the field. Lastly, the development of linguistic tools for assessments and treatment of fear learning and memory disorders is discussed.
+T1 - Current understanding of fear learning and memory in humans and animal models and the value of a linguistic approach for analyzing fear learning and memory in humans.
+Y1 - 2019
+JO - Neuroscience and biobehavioral reviews
+VL - 105
+ER - 
+
+
+
+TY - JOUR
+A1 - Yamasaki Brianna L
+A1 - Stocco Andrea
+A1 - Liu Allison S
+A1 - Prat Chantel S
+AB - Bilingual language control is characterized by the ability to select from amongst competing representations based on the current language in use. According to the Conditional Routing Model (CRM), this feat is underpinned by basal-ganglia signal-routing mechanisms, and may have implications for cognitive flexibility. The current experiment used dynamic causal modeling of fMRI data to compare network-level brain functioning in monolinguals and bilinguals during a task that required productive (semantic decision) and receptive (language) switches. Consistent with the CRM, results showed that: (1) both switch types drove activation in the basal ganglia, (2) bilinguals and monolinguals differed in the strength of influence of dorsolateral prefrontal cortex (DLPFC) on basal ganglia, and (3) differences in bilingual language experience were marginally related to the strength of influence of the switching drives onto basal ganglia. Additionally, a task-by-group interaction was found, suggesting that when bilinguals engaged in language-switching, their task-switching costs were reduced.
+T1 - Effects of bilingual language experience on basal ganglia computations: A dynamic causal modeling test of the conditional routing model.
+Y1 - 2019
+JO - Brain and language
+VL - 197
+ER - 
+
+
+
+TY - JOUR
+A1 - Malaia Evie A
+A1 - Wilbur Ronnie B
+AB - To understand human language-both spoken and signed-the listener or viewer has to parse the continuous external signal into components. The question of what those components are (e.g., phrases, words, sounds, phonemes?) has been a subject of long-standing debate. We re-frame this question to ask: What properties of the incoming visual or auditory signal are indispensable to eliciting language comprehension? In this review, we assess the phenomenon of language parsing from modality-independent viewpoint. We show that the interplay between dynamic changes in the entropy of the signal and between neural entrainment to the signal at syllable level (4-5 Hz range) is causally related to language comprehension in both speech and sign language. This modality-independent Entropy Syllable Parsing model for the linguistic signal offers insight into the mechanisms of language processing, suggesting common neurocomputational bases for syllables in speech and sign language. This article is categorized under: Linguistics > Linguistic Theory Linguistics > Language in Mind and Brain Linguistics > Computational Models of Language Psychology > Language.
+T1 - Syllable as a unit of information transfer in linguistic communication: The entropy syllable parsing model.
+Y1 - 2019
+JO - Wiley interdisciplinary reviews. Cognitive science
+ER - 
+
+
+
+TY - JOUR
+A1 - Carole Bignell
+AB - Abstract(#br)This study offers an insight into the experiences of three newly qualified English primary teachers and their pupils as they sought to develop dialogic teaching in lessons. It draws upon a range of literature from the field of classroom talk, with a particular focus on the work of Robin Alexander to underpin teacher/researcher professional discussion and analysis of periodic video recordings of talk in these classrooms. Supplemented by teacher interviews, the research examines the extent to which a dialogic approach to teacher professional development might facilitate teacher self‐evaluation as a means of developing a more dialogic classroom. In doing so, it seeks to exemplify key talk moves (dialogic bids) that these teachers used to open up dialogic spaces in lessons. The research concludes that raising teacher awareness of such talk moves through professional discussion and reflection upon teaching can provide teachers with a metacognitive resource for talking about and furthering dialogic teaching practices.
+T1 - Promoting NQT linguistic awareness of dialogic teaching practices: a dialogic model of professional development
+Y1 - 2019
+JO - Literacy
+VL - 53
+ER - 
+
+
+
+TY - JOUR
+T1 - Science - Language and Communication Science; University of Southampton Details Findings in Language and Communication Science (A model for L1 grammatical attrition)
+Y1 - 2019
+JO - Science Letter
+ER - 
+
+
+
+TY - JOUR
+A1 - Marcia Sytsma
+A1 - Carlos Panahon
+A1 - Daniel D. Houlihan
+AB - Abstract(#br)With the rapid change in cultural demographics across the globe, an argument is constructed suggesting that school psychologists implement peer tutoring strategies as a means to help dual language students and English language learners. Literature supporting the use of peer tutoring in mastery of second languages is reviewed. Specific focus is on reciprocal peer tutoring and cross-age tutoring and the identifiable advantages these programs might present as compared with traditional teacher–led methods. Recommendations for school psychologists to implement peer tutoring for dual language and English learner students are discussed.
+T1 - Peer Tutoring as a Model for Language and Reading Skills Development for Students who are English Language Learners
+Y1 - 2019
+JO - Journal of Applied School Psychology
+VL - 35
+ER - 
+
+
+
+TY - JOUR
+A1 - Marco Rospocher
+A1 - Francesco Corcoglioniti
+A1 - Alessio Palmero Aprosio
+AB - Abstract(#br) PreMOn is a freely available linguistic resource for exposing predicate models (PropBank, NomBank, VerbNet, and FrameNet) and mappings between them (e.g., SemLink and the predicate matrix) as linguistic linked open data (LOD). It consists of two components: (1) the PreMOn Ontology , that builds on the OntoLex-Lemon model by the W3C ontology-Lexica community group to enable an homogeneous representation of data from various predicate models and their linking to ontological resources; and, (2) the PreMOn Dataset , a LOD dataset integrating various versions of the aforementioned predicate models and mappings, linked to other LOD ontologies and resources (e.g., FrameBase, ESO, WordNet RDF). PreMOn is accessible online in different ways (e.g., SPARQL endpoint), and extensively documented.
+T1 - PreMOn: LODifing linguistic predicate models
+Y1 - 2019
+JO - Language Resources and Evaluation
+VL - 53
+ER - 
+
+
+
+TY - JOUR
+A1 - O.G. Shevchenko
+AB - The article is aimed at identifying the efficiency of a new strategy of learning English intonation. The authors show how learners employed the aspects of intonation with regular guidance and feedback through multi staged process. The authors present a model where students learn to work autonomously stating the aims and goals, working out learning strategies. This article reports on activities as a route towards promoting autonomous use of the BBC&apos;s online dialogues in and outside the classroom to enhance the second language ability in intonation presentation in increasingly informed and successful manner.
+T1 - Promotion of a New Model of Learning of Second Language Intonation
+Y1 - 2019
+JO - Proceedings of the Internation Conference on "Humanities and Social Sciences: Novations, Problems, Prospects" (HSSNPP 2019)
+ER - 
+
+
+
+TY - THES
+PB - 北京邮电大学
+JO - 北京邮电大学
+A1 - 张建华
+AB - 随着智能家居、车载语音系统以及各种语音识别软件流行,语音识别逐渐走进人们的视野,凭借其实用性准确性得到了广大用户的喜爱,同时语音识别作为人机交互的重要接口,成为人工智能领域研究的重点。在大数据的背景下,深度学习得到长足的发展,由于它对海量数据超强的建模能力,被广泛应用与图像、语音识别,并取得了惊人的效果。考虑到理论意义和实用价值,在深度学习的基础上研究语音识别是一个可行的方向。深度学习是一种多层非线性变换网络,通过大量的有监督参数调整计算来建模数据间的复杂关系。本文详细介绍了语音识别以及深度学习的基本原理,然后阐述了怎样将深度学习高效的应用与语音识别中。
+T1 - 基于深度学习的语音识别应用研究
+Y1 - 2015
+ER - 
+
+
+
+TY - JOUR
+A1 - 奚雪峰
+A1 - 周国栋
+AB - 近年来,深度学习在图像和语音处理领域已经取得显著进展,但是在同属人类认知范畴的自然语言处理任务中,研究还未取得重大突破.本文首先从深度学习的应用动机、首要任务及基本框架等角度介绍了深度学习的基本概念;其次,围绕数据表示和学习模型两方面,重点分析讨论了当前面向自然语言处理的深度学习研究进展及其应用策略;并进一步介绍了已有的深度学习平台和工具;最后,对深度学习在自然语言处理领域的发展趋势和有待深入研究的难点进行了展望.
+T1 - 面向自然语言处理的深度学习研究
+Y1 - 2016
+JO - 自动化学报
+SP - 1445
+EP - 1465
+VL - 42
+ER - 
+
+
+
+TY - THES
+PB - 哈尔滨工程大学
+JO - 哈尔滨工程大学
+A1 - 马俊
+AB - 语音识别拥有可观的应用背景，同时作为一个交叉学科也具有深远的理论研究价值。本文分别采用动态时间规整模型和隐马尔科夫模型，实现了孤立词语音识别方案。并探讨语音识别在硬件上的实现以及基音周期估值等具体问题。
+T1 - 语音识别技术研究
+Y1 - 2004
+ER - 
+
+
+
+TY - JOUR
+A1 - 王灿辉
+A1 - 张敏
+A1 - 马少平
+AB - 在信息检索①发展的过程中,研究者们不断尝试着将自然语言处理应用到检索里,希望能够为检索效果提高带来帮助。然而这些尝试的结果大多和研究者们最初的设想相反,自然语言处理在大多数情况下没有改进信息检索效果,甚至反而起了负面作用。即便有一些帮助,也往往是微小的,远远不如自然语言处理所需要的计算消耗那么大。研究者们对这些现象进行了分析,认为:自然语言处理更适合于应用在需要精确结果的任务中,例如问答系统、信息抽取等;自然语言处理需要针对信息检索进行优化才可能发挥积极作用。最新的一些进展(例如在语言模型中加入自然语言处理)在一定程度上印证了这一结论。
+T1 - 自然语言处理在信息检索中的应用综述
+Y1 - 2007
+JO - 中文信息学报
+SP - 35
+EP - 45
+ER - 
+
+
+
+TY - JOUR
+A1 - 洪宇
+A1 - 张宇
+A1 - 刘挺
+A1 - 李生
+AB - 话题检测与跟踪是一项面向新闻媒体信息流进行未知话题识别和已知话题跟踪的信息处理技术。自从1996年前瞻性的探索以来,该领域进行的多次大规模评测为信息识别、采集和组织等相关技术提供了新的测试平台。由于话题检测与跟踪相对于信息检索、信息挖掘和信息抽取等自然语言处理技术具备很多共性,并面向具备突发性和延续性规律的新闻语料,因此逐渐成为当前信息处理领域的研究热点。本文简要介绍了话题检测与跟踪的研究背景、任务定义、评测方法以及相关技术,并通过分析目前TDT领域的研究现状展望未来的发展趋势。
+T1 - 话题检测与跟踪的评测及研究综述
+Y1 - 2007
+JO - 中文信息学报
+SP - 71
+EP - 87
+ER - 
+
+
+
+TY - THES
+PB - 哈尔滨工业大学
+JO - 哈尔滨工业大学
+A1 - 户保田
+AB - 近年来,深度神经网络在诸如图像分类、语音识别等任务上被深入探索并取得了突出的效果,表现出了优异的表示学习能力。文本表示一直是自然语言处理领域的核心问题,传统的文本表示的维数灾难、数据稀疏等问题,已经成为大量自然语言处理任务性能提高的瓶颈。近年来,通过深度神经网络对文本学习表示逐渐成为一个新的研究热点。然而,由于人类语言的灵活多变以及语义信息的复杂抽象,深度神经网络模型在文本表示学习上的应用更为困难。本文旨在研究深度神经网络对不同粒度的文本学习表示,并将其应用于相关任务上。首先,对词向量的学习进行了研究。提出了一种基于动名分离的词向量学习模型。该模型将词性引入到词向量的学习过程,同时保持了词序信息。受人类大脑的动名分离结构的启发,在学习词向量的过程中,该模型根据词性标注工具得到的词性,动态的选择模型顶层的网络参数,从而实现模型的动名分离。与相关向量学习方法进行实验对比,结果显示该模型能够以相对较低的时间复杂度,学习得到高质量的词向量;通过其得到的常见词的相似词更为合理;在命名实体识别和组块分析任务上的性能,显著地优于其它对比的词向量。其次,对语句的表示学习进行了研究。提出了基于深度卷积神经网络的语句表示模型。该模型不依赖句法分析树,通过多层交叠的卷积和最大池化操作对语句进行建模。语句匹配对自然语言处理领域的大量任务非常重要。一个好的匹配模型,不仅需要对语句的内部结构进行合理建模,还需要捕捉到语句间不同层次的匹配模式。基于此,本文提出了两种基于深度卷积神经网络的语句匹配架构。架构一,首先通过两个卷积神经网络分别对两个语句进行表示,然后通过多层感知机进行匹配。架构二,则是对两个语句的匹配直接建模,然后通过多层感知机对匹配表示进行打分。两种匹配架构都无需任何先验知识,因此可被广泛应用于不同性质、不同语言的匹配任务上。在三种不同语言、不同性质的语句级匹配任务上的实验结果表明,本文提出的架构一和架构二远高于其他对比模型。相比架构一,架构二更能够有效地捕捉到两个语句间多层次的匹配模式,架构二在三种任务上取得了优异的性能。第三,对统计机器翻译中短语对的选择进行了研究。提出了上下文依赖的卷积神经网络短语匹配模型。该模型对目标短语对进行选择,不仅考虑到了源端短语与目标端短语的语义相似度,同时利用了源端短语的句子上下文信息。为了有效的对模型进行训练,提出使用上下文依赖的双语词向量初始化模型,同时设计了一种“课程式”的学习算法对模型进行从易到难、循序渐进的训练。实验表明,将该模型对双语短语的匹配打分融入到一个较强的统计机器翻译系统中,可以显著提高翻译性能,BLEU值提高了1.0%。自动生成进行了研究。构建了一个较高质量的大规模中文短文本摘要数据集,该数据集包括240多万的摘要,同时构造了一个高质量的测试集。提出使用基于循环神经网络的编码-解码架构从大规模数据集中自动学习生成摘要,构建了两个基于循环神经网络的摘要生成模型。模型一通过使用循环神经网络对原文进行建模,并将其最后一个状态作为原文段落的表示,利用另一个循环神经网络从该表示中解码生成摘要。模型二在模型一的基础上,通过动态的从编码阶段的循环神经网络的所有状态中综合得到上下文表示,然后将当前的上下文表示传递给解码循环神经网络生成摘要。两种模型都是产生式模型,无需任何人工特征。实验表明,两种模型能够对原文进行较为合理的表示,生成具有较高信息量的摘要文本。特别地,模型二生成的摘要文本质量显著优于模型一。综上所述,本文以深度神经网络为手段,以文本表示为研究对象,对自然语言中不同粒度的文本即词、句、段的表示学习及其应用进行了深入研究。本文将所提出的方法应用到了序列标注、语句匹配、机器翻译以及自动文摘生成问题上,并取得了良好的效果。
+T1 - 基于深度神经网络的文本表示及其应用
+Y1 - 2016
+ER - 
+
+
+
+TY - THES
+PB - 中国科学技术大学
+JO - 中国科学技术大学
+A1 - 张仕良
+AB - 语音作为最自然、最有效的交流途径,一直是人机通信和交互领域最受关注的研究内容之一。自动语音识别的主要目的是让计算机能够"听懂"人类的语音.将语音波形信号转化成文本。它是实现智能的人机交互的关键技术之一。声学模型和语言模型是语音识别系统的两个核心模块。传统的语音识别系统普遍采用基于高斯混合模型和隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model,GMM-HMM)的声学模型以及n-gram语言模型。近年来,随着深度学习的兴起,基于深度神经网络的声学模型和语言模型相比于传统的GMM-HMM和n-gram模型分别都获得了显著的性能提升。在此背景下,本论文从深度神经网络的模型结构出发,展开了较为系统和深入的研究,一方面对现有的模型进行优化,另一方面结合语音及语言信号的特性探究新的网络结构模型,从而提高基于深度神经网络的语音识别系统的性能和训练效率。首先,本文研究了基于前馈全连接深度神经网络(Deep Neural Networks,DNN)的语音声学建模。我们分别探索了基于sigmoid非线性激活函数的DNN(sigmoid-DNN)和基于整流线性单元(Rectified Linear Units,ReLU)的 DNN(RL-DNN)的大词汇量连续语音识别。首先针对传统的sigmoid-DNN,我们通过研究发现其隐层权重越往高层稀疏性越强的特性,提出了一种隐层节点递减的DNN结构,命名为sDNN。实验结果表明sDNN可以在保持性能基本不变的情况下将模型参数量减少到45%,从而获得2倍的训练加速。进一步地我们提出将dropout预训练作为一种神经网络的初始化方法,可以获得相比于传统的无监督Pre-training更好的性能。然后我们针对RL-DNN的研究发现,通过合理的参数配置,可以采用基于大批量的随机梯度下降算法来训练RL-DNN,从而能够利用多个图形处理单元(Graphic Processing Unit,GPU)进行并行化训练,可以获得超过10倍的训练加速。进一步地我们提出了一种绑定标量规整的方法用于优化RL-DNN的训练,不仅使得训练更加稳定,而且能够获得显著的性能提升。其次,本文提出一种固定长度依次遗忘编码(Fixed-size Ordinally Forgetting Encoding,FOFE)方法用于语言模型建模。FOFE通过简单的顺序遗忘机制来对序列中的单词位置进行建模,可以将任何可变长度的单词序列唯一地编码成固定大小的表达。本研究中,我们提出基于FOFE的前馈神经网络语言模型(FOFE-FNNLM)。实验结果表明,在不使用任何反馈连接的情况下,基于FOFE的FNNLM显著的优于标准的基于1-of-k编码作为输入的FNNLM,同时也优于基于循环神经网络(Recurrent Neural Networks,RNN)的语言模型。再次,本文提出了一种新颖的神经网络结构,命名为前馈序列记忆神经网络(Feedforward Sequential Memory Networks,FSMN)。FSMN 可以对时序信号中的长时相关性(long-term dependency)进行建模而不需要使用反馈连接。本研究所提出来的FSMN可以认为是在标准的前馈全连接神经网络的隐藏层中配备了一些可学习的记忆模块。这些记忆模块使用抽头延迟线结构将长时上下文信息编码成固定大小的表达作为一种短时记忆机制。我们在语音识别声学建模以及语言模型建模任务上验证了所提出的FSMN模型。实验结果表明,FSMN不仅可以取得相比于当前最流行的循环神经网络更好的性能,而且训练更加高效。在此基础上,我们探索了 FSMN模型的改进,通过结合低秩矩阵分解的思路以及修改记忆模块的编码方式提出了一种结构简化的FSMN,命名为cFSMN。同时通过在cFSMN的记忆模块之间添加跳转连接,避免深层网络训练过程梯度消失的问题,实现了非常深层的cFSMN的训练。我们在Switchboard数据库以及Fisher数据库进行的声学建模实验验证了所提出的模型的性能。Fisher数据库的实验结果表明基于深层的cFSMN的识别系统相比于主流的基于BLSTM的识别系统可以获得13.8%的相对词错误率下降。最后,本文提出一种用于高维数据建模的新模型,称之为联合优化正交投影和估计(Hybrid Orthogonal Projection and Estimation,HOPE)模型。HOPE 将线性正交投影和混合模型融合为一个生成模型。HOpe模型本身可以从无标注的数据中通过无监督最大似然估计方法进行无监督学习,同时也可以采用带标注的数据进行有监督学习。更为有趣的是,我们的研究阐述了 HOPE模型和神经网络之间的密切关系。HOPE可以作为一个新的工具用于探究深度学习的黑盒子,以及用于有监督和无监督深度神经网络的训练。我们在语音识别TIM1T数据库以及图像分类MNIST数据库验证了基于HOPE模型的无监督、半监督以及有监督学习。实验结果表明,基于HOPE框架训练的神经网络相比于现有的神经网络在无监督、半监督以及有监督学习任务上都获得显著的性能提升。
+T1 - 基于深度神经网络的语音识别模型研究
+Y1 - 2017
+ER - 
+
+
+
+TY - JOUR
+A1 - 吴福祥
+A1 - 张定
+AB - 语义图模型是语言类型学近年来备受关注的一种新的研究视角,目的是采用几何图形来表征语法形式的多功能性,揭示人类语言中语法形式多功能模式的系统性和规律性。本文从五个方面对该研究模型做了比较全面的介绍。
+T1 - 语义图模型:语言类型学的新视角
+Y1 - 2011
+JO - 当代语言学
+SP - 336
+EP - 350+380
+VL - 13
+ER - 
+
+
+
+TY - JOUR
+A1 - 徐戈
+A1 - 王厚峰
+AB - 主题模型在自然语言处理领域受到了越来越多的关注.在该领域中,主题可以看成是词项的概率分布.主题模型通过词项在文档级的共现信息抽取出语义相关的主题集合,并能够将词项空间中的文档变换到主题空间,得到文档在低维空间中的表达.作者从主题模型的起源隐性语义索引出发,对概率隐性语义索引以及LDA等在主题模型发展中的重要阶段性工作进行了介绍和分析,着重描述这些工作之间的关联性.LDA作为一个概率生成模型,很容易被扩展成其它形式的概率模型.作者对由LDA派生出的各种模型作了粗略分类,并选择了各类的代表性模型简单介绍.主题模型中最重要的两组参数分别是各主题下的词项概率分布和各文档的主题概率分布,作者对期望最大化算法在主题模型参数估计中的使用进行了分析,这有助于更深刻理解主题模型发展中各项工作的联系.
+T1 - 自然语言处理中主题模型的发展
+Y1 - 2011
+JO - 计算机学报
+SP - 1423
+EP - 1436
+VL - 34
+ER - 
+
+
+
+TY - THES
+PB - 吉林大学
+JO - 吉林大学
+A1 - 陈晓美
+AB - 当今的中国，客观存在两个社会舆论场，一个是以报纸、广播电视等为主流媒体的社会舆论场，一个是以互联网和近几年来兴起的Web2.0应用为平台的民间舆论场。在新的Web2.0环境下，基于互联网的社会舆论平台除了原有的网站新闻评论、BBS等形式外，又涌现出了聚合新闻（RSS）、维基百科（Wiki）、QQ等即时通信工具（IM）、（微）博客、播客、淘宝与易趣综合的商务平台等新形式，使得网络当中的评论信息量得到了快速增长。目前我国网民规模已经进入发展平台期，手机成为新增网民的第一主力，微博、社区等微内容成为网络评论观点的主要来源，及时性、开放性、交互性、思想性、草根性成为网络评论信息的新特征，深深影响着人们生活的各个领域，改变了社会舆论生成演变与聚合的机制，拓展了社会舆论的传播空间。
+T1 - 网络评论观点知识发现研究
+Y1 - 2014
+ER - 
+
+
+
+TY - THES
+PB - 中国科学技术大学
+JO - 中国科学技术大学
+A1 - 杨南
+AB - 近年来,统计机器翻译(Statistical Machine Translation, SMT)研究蓬勃发展,机器翻译效果有了很大改善。然而,机器翻译研究也遇到了双语数据不足、缺乏有效特征表示等困难,影响词对齐、调序、翻译建模等机器翻译关键模块的进一步提升,机器翻译的效果仍不尽人意。与此同时,深度学习作为一种新的机器学习方法,能自动的学习抽象特征表示,建立输入与输出信号间复杂的映射关系,给统计机器翻译研究提供了新的思路。
+T1 - 基于神经网络学习的统计机器翻译研究
+Y1 - 2014
+ER - 
+
+
+
+TY - THES
+PB - 中国科学技术大学
+JO - 中国科学技术大学
+A1 - 周盼
+AB - 语音识别的终极目标是使人与机器之间能够像人与人之间一样自如的交流。声学模型性能的好坏直接影响到整个语音识别系统的准确性。过去几十年,高斯混合模型-隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model, GMM-HMM)在语音识别声学建模方法中一直起着主导作用。GMM-HMM框架由于具备较完善的理论体系,包括区分性训练、自适应等成熟的配套算法,以及HTK等开源工具,而受到众多研究者的追捧。近年来,深度学习(Deep Learning)理论在机器学习领域兴起,其对语音识别方向也产生了深远影响。基于深度神经网络-隐马尔科夫模型(Deep Neural Network-Hidden Markov Model, DNN-HMM)的声学模型混合建模方案迅速取代传统的GMM-HMM框架,成为当前主流语音识别系统的标配,基于DNN-HMM新框架的相关算法研究也受到语音识别领域的广泛关注。在这样的背景下,本论文围绕深度神经网络声学建模及其在自动语音识别中的应用,进行了较系统而深入的研究。
+T1 - 基于深层神经网络的语音识别声学建模研究
+Y1 - 2014
+ER - 
+
+
+
+TY - THES
+PB - 中国科学技术大学
+JO - 中国科学技术大学
+A1 - 蒋兵
+AB - 语种识别(Language Identification, LID)是指自动判定给定语音段语言种类的过程。伴随着国际化趋势的日益深入,语种识别技术在多语言语音处理系统中的作用也越来越重要,业已成为多语言智能语音技术的不可或缺的关键组成部分之一。经过近五十余年的发展,对语种识别的研究取得了长足的进步,在某些特定任务下长时语音段的语种识别性能甚至超过了人工识别的结果。然而,现有语种识别系统的性能仍然不能满足日益增长的需求,尤其是面对短时语音段语种识别以及高混淆度的语言识别任务时。这主要是由于语言信息属于语音信号中的弱信息,隐藏在语音信号中,需要通过对语音中的信息进行提取和分析才能进行判定。判决结果的好坏强烈地依赖于语音信息段中的相关统计信息,而在短时语音段和高混淆语言任务中,现有方法对这些统计信息的估计缺乏鲁棒性。面对上述挑战,如何提取更适用于语种识别的特征以及提升模型的非线性分类能力是当前的研究重点。
+T1 - 语种识别深度学习方法研究
+Y1 - 2015
+ER - 
+
+
+
+TY - THES
+PB - 中国科学院研究生院（计算技术研究所）
+JO - 中国科学院研究生院（计算技术研究所）
+A1 - 周昭涛
+T1 - 文本聚类分析效果评价及文本表示研究
+Y1 - 2005
+ER - 
+
+
+
+TY - JOUR
+A1 - 刘群
+AB - 本文介绍近年来国际机器翻译研究领域取得的一些进展,着重介绍统计机器翻译方面取得的进展。具体包括:统计机器翻译的原理和特点、统计机器翻译的发展历程和现状、基于词的统计机器翻译方法、基于短语的统计机器翻译方法、基于句法的统计机器翻译方法等。最后对机器翻译研究今后的发展进行了讨论和展望。
+T1 - 机器翻译研究新进展
+Y1 - 2009
+JO - 当代语言学
+SP - 147
+EP - 158+190
+VL - 11
+ER - 
+
+
+
+TY - JOUR
+A1 - 丁小东
+A1 - 姚志刚
+A1 - 程高
+AB - 目前现有的将LINGO语言和O-1整数规划模型结合解决物流配送中心选址的理论较多,但不完善,主要表现在建模时对费用的考虑不全面、编程时所使用的变量不统一和求解时使用的是算例,数据真实性不高。针对以上问题,论文对LINGO语言与0-1混合整数规划选址模型进行再结合。首先把与配送相关的物流活动分为进货、仓储和送货三大物流环节,由此将配送中心选址中所涉及到的费用分为进货运输费用、仓储费用和送货配送费用;其次对建模所涉及到变量进行科学的规范,并成功建立O-1整数规划模型;最后以邯郸交通运输集团物流配送中心选址为实例,运用所建立的0-1混合整数规划模型,编写相应的LINGO求解程序,通过运行得出邯运集团在石家庄、北京、邯郸建立配送中心此时费用最少,最终到达LINGO语言与0-1混合整数规划选址模型的完美结合。
+T1 - LINGO语言与0-1混合整数规划选址模型的再结合
+Y1 - 2009
+JO - 物流工程与管理
+SP - 72
+EP - 75
+VL - 31
+ER - 
+
+
+
+TY - THES
+PB - 北京林业大学
+JO - 北京林业大学
+A1 - 蒙小英
+AB - 1920-1970年间，北欧园林成功地把现代主义本土化、本土景观要素现代化，生成了地域性与艺术品质兼具的现代主义景观，形成了现代园林设计传统，也为北欧人创造了理想生活的园林环境。我国有着与北欧相似的社会制度，对它成功发展的现代主义园林设计语言的研究，旨在启示我们创造景观与生活的结合、以及地域性与艺术品质相统一的园林的一体化创作。
+T1 - 北欧现代主义园林设计语言研究：1920-1970
+Y1 - 2006
+ER - 
+
+
+
+TY - THES
+PB - 华南理工大学
+JO - 华南理工大学
+A1 - 李勇
+T1 - 复杂网络理论与应用研究
+Y1 - 2005
+ER - 
+
+
+
+TY - THES
+PB - 华东师范大学
+JO - 华东师范大学
+A1 - 张志华
+AB - 情感分析识别给定文本或其中片段(如句子、短语或词)的情感极性(正、负或中性)或情感强度(强或弱)。情感分析应用在产品评论分析可以识别用户对产品的情感,为商家和其他用户提供决策支持。以往研究多采用人工抽取特征和机器学习算法相结合构建识别系统。然而,人工抽取特征需要专家的领域知识,系统适应性差,人力成本高。近年研究者开始使用深度学习的方法来自动抽取特征。深度学习在自然语言处理中最基础的一个研究成果是词向量,即词的分布式语义表达,并在许多传统自然语言处理中得到应用。但是传统词向量根据上下文学习获得,包含语义和语法信息,缺乏情感信息,不能很好的解决情感分析任务。为了将情感信息融入到词向量中,本文第一部分工作提出了两个情感词向量学习框架,即,基于谷歌提出的Skip-gram模型的框架和基于卷积神经网络模型的框架。在每个框架中,根据情感和语义信息融合策略的不同,我们又分别提出三个具体模型。为了验证学习得到的情感词向量是否包含语义和情感信息,本文分别在不同语言、不同领域的多个数据集下进行了大量定性和定量的比较实验。这部分相关工作分别发表在2015年IALP会议和2016年IJCNN会议。为了将词的情感语义表达扩展到长文本上,本文第二部分工作提出基于深度学习的卷积神经网络对长文本进行情感语义建模,解决长文本(句子)情感分类。这部分相关工作应用在SemEval(国际标准语义评测)2015年和2016年的推文情感分析中,相关论文发表在2015和2016年SemEval会议上。更进一步,为了预测情感强度,本文第三部分工作将情感词向量与传统人工特征结合,构建有监督的排序模型预测情感强度。在2016年SemEval竞赛的英文短语情感强度预测任务中,这部分工作获得了第一名的好成绩。本文在不同文本层面(词、短语以及句子),不同语言(中文和英文)和不同领域(推文和评论)中进行了大量定性和定量的实验。实验结果表明,本文提出的情感词向量能有效包含情感和语义信息,模型具有较好的泛化性。
+T1 - 基于深度学习的情感词向量及文本情感分析的研究
+Y1 - 2016
+ER - 
+
+
+
+TY - JOUR
+A1 - 禹琳琳
+AB - 语音识别作为信息技术中一种人机接口的关键技术,具有重要的研究意义和广泛的应用价值。介绍了语音识别技术发展的历程,具体阐述了语音识别概念、基本原理、声学建模方法等基本知识,并对语音识别技术在各领域的应用作了简要介绍。
+T1 - 语音识别技术及应用综述
+Y1 - 2013
+JO - 现代电子技术
+SP - 43
+EP - 45
+VL - 36
+ER - 
+
+
+

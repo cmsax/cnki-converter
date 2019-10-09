@@ -115,7 +115,11 @@ def dump(orig_file_name, lines):
 
 
 def converter(filepath):
-    """converter"""
+    """converter
+
+    Return:
+        dumpfile_path, item_count
+    """
     all_lines = ""
     item_count = 0
     for item in reader(filepath):
@@ -128,5 +132,4 @@ def converter(filepath):
 
 
 if __name__ == "__main__":
-    converter(
-        '/Users/mingshicai/Documents/workspace/python/qt/cnki-converter/demo.txt')
+    converter('./demo.txt')

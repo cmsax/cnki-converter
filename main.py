@@ -8,14 +8,49 @@
 # ----
 # Copyright (c) 2019 MingshiCai i@unoiou.com
 import sys
-import time
 
-from PySide2 import QtCore, QtWidgets, QtGui
+from PySide2 import QtCore, QtWidgets
 
 from converter import converter
 
 
-class MyWidget(QtWidgets.QWidget):
+class ConverterSignals(QtCore.QObject):
+    finished = QtCore.Signal()
+    result = QtCore.Signal(object)
+
+
+class Converter(QtCore.QRunnable):
+    def __init__(self, files=[]):
+        super(Converter, self).__init__()
+        self.signals = ConverterSignals()
+        self.files = files
+        self.result = {
+            'files_count': len(self.files),
+            'suc_count': 0, 'dump_file_paths': [], 'entries_count': 0,
+            'exceptions': []
+        }
+
+    @QtCore.Slot()
+    def run(self):
+        for filepath in self.files:
+            try:
+                dump, count = converter(filepath)
+            except Exception as e:
+                self.result['exceptions'].append(str(e))
+            else:
+                self.result['suc_count'] += 1
+                self.result['dump_file_paths'].append(dump)
+                self.result['entries_count'] += count
+            finally:
+                self.signals.finished.emit()
+
+        self.signals.result.emit(self.result)
+
+    def start(self):
+        QtCore.QThreadPool.globalInstance().start(self)
+
+
+class MainWindow(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
@@ -28,73 +63,94 @@ class MyWidget(QtWidgets.QWidget):
 
         self.text = QtWidgets.QLabel(self.intro)
         self.text.setAlignment(QtCore.Qt.AlignCenter)
+
         self.logo = QtWidgets.QLabel('🍉🐶🐒')
         self.logo.setStyleSheet('font-size: 20px')
         self.logo.setAlignment(QtCore.Qt.AlignCenter)
 
+        self.progress = QtWidgets.QProgressBar(self)
+        self.progress.hide()
+
         self.layout = QtWidgets.QVBoxLayout()
         self.layout.addWidget(self.logo)
         self.layout.addWidget(self.text)
+        self.layout.addWidget(self.progress)
 
         self.setLayout(self.layout)
 
         self.setAcceptDrops(True)
-        # 保持顶端
         self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-        # 禁止全屏
         self.setWindowFlag(QtCore.Qt.WindowFullscreenButtonHint, False)
 
     def file_hover(self):
+        self.setStyleSheet("background-color: #414145; color: white")
         self.text.setText('Oh yeah, put down')
 
     def file_unhover(self):
+        self.setStyleSheet("")
         self.text.setText(self.intro)
 
-    def convert_file(self, filepath):
-        try:
-            self.dump_path, self.item_count = converter(filepath)
-        except Exception:
-            self.show_msg(
-                'Error', 'Is it an EndNote format text file?',
-                'You must drag an EndNote format reference file here.',
-                QtWidgets.QMessageBox.Critical
-            )
-        else:
-            self.show_msg(
-                'Success', 'Converted success!',
-                'RefMan reference file: {}\n\nOverall {} entries.'.format(
-                    self.dump_path, self.item_count)
-            )
-        finally:
-            self.file_unhover()
+    def running(self, files_count):
+        self.progress.show()
+        self.progress.setMaximum(files_count)
+        self.progress.setValue(0)
+        self.text.setText("converting, plz wait...")
 
     def show_msg(self, title, text, information, icon=None):
         msg = QtWidgets.QMessageBox(self)
         msg.setWindowTitle(title)
         if icon:
-            msg.setIcon(QtWidgets.QMessageBox.Information)
+            msg.setIcon(icon)
         msg.setInformativeText(information)
         msg.setText(text)
         msg.exec_()
+
+    def show_about(self):
+        about = AboutWindow()
+        about.show()
+        about.exec_()
+
+    @QtCore.Slot()
+    def complete(self, result):
+        self.show_msg(
+            'Success', 'Converted complete!',
+            'All {} file(s), success {} file(s), Overall {} entries.\n\nRefMan exported files are in:\n{}\n\n{}'.format(
+                result['files_count'], result['suc_count'],
+                result['entries_count'], '\n'.join(
+                    ['>{}: {}'.format(i, p) for i, p in enumerate(result['dump_file_paths'])]),
+                '' if len(
+                    result['exceptions']) == 0 else 'Noticed that there are some files converted failed, are they EndNote format text files?'
+            ),
+            QtWidgets.QMessageBox.Information
+        )
+        self.text.setText(self.intro)
+        self.progress.reset()
+        self.progress.hide()
+
+    @QtCore.Slot()
+    def update_progress(self):
+        self.progress.setValue(self.progress.value() + 1)
 
     def dragEnterEvent(self, e):
         if e.mimeData().hasUrls():
             e.acceptProposedAction()
             self.file_hover()
 
-    def dropEvent(self, e):
-        urls = e.mimeData().urls()
-        self.file_unhover()
-        self.text.setText("converting, plz wait...")
-        for url in urls:
-            self.convert_file(url.toLocalFile())
-
     def dragLeaveEvent(self, e):
         self.file_unhover()
+
+    def dropEvent(self, e):
+        files = [url.toLocalFile() for url in e.mimeData().urls()]
+        self.file_unhover()
+        self.running(len(files))
+        con = Converter(files)
+        con.signals.result.connect(self.complete)
+        con.signals.finished.connect(self.update_progress)
+        con.start()
 
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
-    widget = MyWidget()
-    widget.show()
+    window = MainWindow()
+    window.show()
     sys.exit(app.exec_())

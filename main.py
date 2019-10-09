@@ -32,6 +32,8 @@ class Converter(QtCore.QRunnable):
 
     @QtCore.Slot()
     def run(self):
+        import time
+        time.sleep(1)
         for filepath in self.files:
             try:
                 dump, count = converter(filepath)
@@ -54,18 +56,22 @@ class MainWindow(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
-        self.intro = "Drag CNKI file(s) here\nEndNote supported only"
+        self.intro = "Drag CNKI file(s) here.\nEndNote supported only."
+        self.waiting_logo_content = "🐒"
+        self.hover_logo_content = "👇"
+        self.running_logo_content = "👍"
+
         self.dump_path = ''
         self.item_count = 0
 
         self.setWindowTitle("Converter - by cms")
-        self.setFixedSize(230, 120)
+        self.setFixedSize(250, 140)
 
         self.text = QtWidgets.QLabel(self.intro)
         self.text.setAlignment(QtCore.Qt.AlignCenter)
 
-        self.logo = QtWidgets.QLabel('🍉🐶🐒')
-        self.logo.setStyleSheet('font-size: 20px')
+        self.logo = QtWidgets.QLabel(self.waiting_logo_content)
+        self.logo.setStyleSheet('font-size: 35px')
         self.logo.setAlignment(QtCore.Qt.AlignCenter)
 
         self.progress = QtWidgets.QProgressBar(self)
@@ -85,16 +91,19 @@ class MainWindow(QtWidgets.QWidget):
     def file_hover(self):
         self.setStyleSheet("background-color: #414145; color: white")
         self.text.setText('Oh yeah, put down')
+        self.logo.setText(self.hover_logo_content)
 
-    def file_unhover(self):
-        self.setStyleSheet("")
+    def waiting(self):
+        self.logo.setText(self.waiting_logo_content)
         self.text.setText(self.intro)
 
     def running(self, files_count):
+        self.setStyleSheet("")
         self.progress.show()
         self.progress.setMaximum(files_count)
         self.progress.setValue(0)
-        self.text.setText("converting, plz wait...")
+        self.logo.setText(self.running_logo_content)
+        self.text.setText("Converting...")
 
     def show_msg(self, title, text, information, icon=None):
         msg = QtWidgets.QMessageBox(self)
@@ -105,25 +114,20 @@ class MainWindow(QtWidgets.QWidget):
         msg.setText(text)
         msg.exec_()
 
-    def show_about(self):
-        about = AboutWindow()
-        about.show()
-        about.exec_()
-
     @QtCore.Slot()
     def complete(self, result):
         self.show_msg(
-            'Success', 'Converted complete!',
-            'All {} file(s), success {} file(s), Overall {} entries.\n\nRefMan exported files are in:\n{}\n\n{}'.format(
+            'Success', 'Convertion complete!',
+            'All {} file(s), success {} file(s), Overall {} references.\n\nRefMan exported files are in:\n{}\n\n{}'.format(
                 result['files_count'], result['suc_count'],
                 result['entries_count'], '\n'.join(
-                    ['>{}: {}'.format(i, p) for i, p in enumerate(result['dump_file_paths'])]),
+                    ['>{}: {}'.format(i+1, p) for i, p in enumerate(result['dump_file_paths'])]),
                 '' if len(
                     result['exceptions']) == 0 else 'Noticed that there are some files converted failed, are they EndNote format text files?'
             ),
-            QtWidgets.QMessageBox.Information
+            # QtWidgets.QMessageBox.Information
         )
-        self.text.setText(self.intro)
+        self.waiting()
         self.progress.reset()
         self.progress.hide()
 
@@ -137,11 +141,11 @@ class MainWindow(QtWidgets.QWidget):
             self.file_hover()
 
     def dragLeaveEvent(self, e):
-        self.file_unhover()
+        self.waiting()
 
     def dropEvent(self, e):
         files = [url.toLocalFile() for url in e.mimeData().urls()]
-        self.file_unhover()
+        self.waiting()
         self.running(len(files))
         con = Converter(files)
         con.signals.result.connect(self.complete)

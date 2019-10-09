@@ -124,7 +124,6 @@ def converter(filepath):
     item_count = 0
     for item in reader(filepath):
         ris_entry = adapter('endnote')(item)
-        print(ris_entry)
         all_lines += ris_entry
         item_count += 1
     assert len(all_lines) > 3

@@ -15,7 +15,6 @@ jobs:
       language: generic
       sudo: required
       on:
-        branch: master
         tags: true
       before_deploy:
         - tar -cvf dist/CNKI-Converter-macOS.app.tar dist/CNKI-Converter-darwin.app
@@ -25,13 +24,10 @@ jobs:
         file: dist/**/*.tar
         file_glob: true
         skip_cleanup: true
-        on:
-          tags: true
     - stage: build Windows binary
       os: windows
       language: sh
       on:
-        branch: master
         tags: true
       before_install:
         - choco install python --version=3.7.4
@@ -42,5 +38,3 @@ jobs:
         file: dist/**/*.exe
         file_glob: true
         skip_cleanup: true
-        on:
-          tags: true

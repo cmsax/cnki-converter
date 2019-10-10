@@ -5,3 +5,4 @@ dist-back*
 .vscode
 .DS_Store
 .python-version
+!build.sh

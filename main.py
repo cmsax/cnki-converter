@@ -7,11 +7,14 @@
 # Modified By:
 # ----
 # Copyright (c) 2019 MingshiCai i@unoiou.com
+"""`print` is thread safe, use `print` instead of `logging`.
+"""
 import sys
 
 from PySide2 import QtCore, QtWidgets
 
 from converter import converter
+from update import Updater
 
 
 class ConverterSignals(QtCore.QObject):
@@ -64,6 +67,9 @@ class MainWindow(QtWidgets.QWidget):
         self.setWindowTitle("Converter - by cms")
         self.setFixedSize(250, 140)
 
+        self.update_btn = QtWidgets.QPushButton(text='update')
+        self.update_btn.clicked.connect(self.check_for_update)
+
         self.text = QtWidgets.QLabel(self.intro)
         self.text.setAlignment(QtCore.Qt.AlignCenter)
 
@@ -78,12 +84,26 @@ class MainWindow(QtWidgets.QWidget):
         self.layout.addWidget(self.logo)
         self.layout.addWidget(self.text)
         self.layout.addWidget(self.progress)
+        self.layout.addWidget(self.update_btn)
 
         self.setLayout(self.layout)
 
         self.setAcceptDrops(True)
         self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
         self.setWindowFlag(QtCore.Qt.WindowFullscreenButtonHint, False)
+
+        self.updater = Updater()
+        # self.updater.signal.finished.connect(self.handle_update_finish)
+        # self.updater.signal.start_download.connect(self.handle_start_download)
+        self.updater.signal.check_for_update.connect(
+            self.handle_check_for_update)
+
+    def handle_check_for_update(self, update_object):
+        print('got\n')
+        print(update_object)
+
+    def check_for_update(self):
+        self.updater.start()
 
     def file_hover(self):
         self.setStyleSheet("background-color: #414145; color: white")

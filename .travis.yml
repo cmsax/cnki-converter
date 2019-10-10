@@ -1,7 +1,10 @@
-os: osx
 language: python
+os:
+  - osx
+  - windows
+  - linux
 python:
-  - "3.7.3"
+  - "3.5"
 
 install:
   - pip install -r requirements.txt

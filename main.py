@@ -30,10 +30,7 @@ class Converter(QtCore.QRunnable):
             'exceptions': []
         }
 
-    @QtCore.Slot()
     def run(self):
-        import time
-        time.sleep(1)
         for filepath in self.files:
             try:
                 dump, count = converter(filepath)

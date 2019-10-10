@@ -4,3 +4,4 @@ __pycache__
 dist-back*
 .vscode
 .DS_Store
+.python-version

@@ -14,10 +14,12 @@ jobs:
       os: osx
       language: generic
       sudo: required
+      before_deploy:
+        - tar -cvf dist/CNKI-Converter-macOS.app.tar dist/CNKI-Converter-darwin.app
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN
-        file: dist/**/*.app
+        file: dist/**/*.tar
         draft: true
         file_glob: true
         skip_cleanup: true

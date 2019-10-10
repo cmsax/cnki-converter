@@ -22,7 +22,7 @@ script:
 deploy:
   provider: releases
   api_key: $GITHUB_OATU_TOKEN
-  file: "dist"
+  local_dir: "dist"
   skip_cleanup: true
   on:
     branches: true

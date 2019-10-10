@@ -6,7 +6,7 @@ install:
 script:
   - chmod +x build.sh
   - ./build.sh
-  - ls
+  - ls -R
 
 jobs:
   include:

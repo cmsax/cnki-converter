@@ -22,12 +22,13 @@ class UpdaterSignals(QtCore.QObject):
 
 
 class Updater(QtCore.QRunnable):
-    def __init__(self):
+    def __init__(self, action='check'):
         super(Updater, self).__init__()
         self.current_version = 'v1.4.0'
         self.latest_version = None
         self.download_url = None
         self.signal = UpdaterSignals()
+        self.action = action
 
     @property
     def os(self):
@@ -46,6 +47,9 @@ class Updater(QtCore.QRunnable):
     @property
     def api(self):
         return 'https://api.unoiou.com/apps/version?app_name=cnki-converter&os={}'.format(self.os)
+
+    def set_action(self, action):
+        self.action = action
 
     def check(self):
         print('start checking for updates')
@@ -78,7 +82,7 @@ class Updater(QtCore.QRunnable):
             self.signal.finished.emit()
 
     def run(self):
-        self.check()
+        {'check': self.check, 'download': self.download}[self.action]()
 
     def start(self):
         print('start updater thread')

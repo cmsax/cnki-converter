@@ -14,6 +14,8 @@ jobs:
       os: osx
       language: generic
       sudo: required
+      on:
+        tags: true
       before_deploy:
         - tar -cvf dist/CNKI-Converter-macOS.app.tar dist/CNKI-Converter-darwin.app
       deploy:
@@ -27,6 +29,8 @@ jobs:
     - stage: build Windows binary
       os: windows
       language: sh
+      on:
+        tags: true
       before_install:
         - choco install python --version=3.7.4
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"

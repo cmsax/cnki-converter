@@ -8,9 +8,9 @@ script:
   - ./build.sh
   - ls -R
 
-jobs:
+matrix:
   include:
-    - stage: build macOS binary
+    - name: "build macOS binary"
       os: osx
       language: generic
       sudo: required
@@ -30,7 +30,7 @@ jobs:
           branch: master
           tags: true
 
-    - stage: build Windows binary
+    - name: "build Windows binary"
       os: windows
       language: sh
       if: tag IS present

@@ -38,7 +38,7 @@ matrix:
         - choco install python --version=3.7.4
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
       before_deploy:
-        - python3 deploy_to_cos.py
+        - python deploy_to_cos.py
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN

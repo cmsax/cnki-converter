@@ -17,7 +17,7 @@ jobs:
       if: tag IS present
       before_deploy:
         - tar -cvf dist/CNKI-Converter-macOS.app.tar dist/CNKI-Converter-darwin.app
-        - python deploy_to_cos.py
+        - python3 deploy_to_cos.py
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN
@@ -38,7 +38,7 @@ jobs:
         - choco install python --version=3.7.4
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
       after_deploy:
-        - python deploy_to_cos.py
+        - python3 deploy_to_cos.py
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN

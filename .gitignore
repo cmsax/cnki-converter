@@ -6,3 +6,4 @@ dist-back*
 .DS_Store
 .python-version
 !build.sh
+*.spec

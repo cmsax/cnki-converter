@@ -21,3 +21,7 @@
 ![启动器](screenshots/s1.png)
 
 ![主界面](screenshots/s2.png)
+
+## 开发
+
+需要配置一些必要的环境变量。

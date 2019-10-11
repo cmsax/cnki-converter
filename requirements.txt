@@ -1,2 +1,3 @@
 pyinstaller
 PySide2
+cos-python-sdk-v5

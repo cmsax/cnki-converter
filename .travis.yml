@@ -17,15 +17,19 @@ jobs:
       if: tag IS present
       before_deploy:
         - tar -cvf dist/CNKI-Converter-macOS.app.tar dist/CNKI-Converter-darwin.app
+        - python deploy_to_cos.py
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN
-        file: dist/**/*.tar
+        file:
+          - dist/**/*.tar
+          - dist/**/*.json
         file_glob: true
         skip_cleanup: true
         on:
           branch: master
           tags: true
+
     - stage: build Windows binary
       os: windows
       language: sh
@@ -33,10 +37,14 @@ jobs:
       before_install:
         - choco install python --version=3.7.4
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
+      after_deploy:
+        - python deploy_to_cos.py
       deploy:
         provider: releases
         api_key: $GITHUB_OATU_TOKEN
-        file: dist/**/*.exe
+        file:
+          - dist/**/*.exe
+          - dist/**/*.json
         file_glob: true
         skip_cleanup: true
         on:

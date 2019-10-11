@@ -29,6 +29,7 @@ class Updater(QtCore.QRunnable):
         self.download_url = None
         self.signal = UpdaterSignals()
         self.action = action
+        self.setAutoDelete(False)
 
     @property
     def os(self):
@@ -66,14 +67,16 @@ class Updater(QtCore.QRunnable):
     def download(self):
         print('start downloading binary')
         res = get(self.download_url, stream=True)
+        print(res)
         length = res.headers.get('content-length')
         if not length:
             self.signal.finished.emit()
             return 1
+        print("got length")
         self.signal.start_download.emit(length)
         dl = 0
         with open('./cnki-converter-new.tar', 'wb+') as f:
-            for chunk in res.iter_content(chunk_size=1024):
+            for chunk in res.iter_content(chunk_size=2048):
                 if chunk:
                     f.write(chunk)
                     f.flush()

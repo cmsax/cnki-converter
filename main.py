@@ -94,8 +94,10 @@ class MainWindow(QtWidgets.QWidget):
         self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
         self.setWindowFlag(QtCore.Qt.WindowFullscreenButtonHint, False)
 
-        # self.updater = Updater()
-        # self.updater.signal.finished.connect(self.handle_update_finish)
+        # self.updater = Updater(parent=self)
+        # self.updater.signal.finished.connect(self.handle_download_finished)
+        # self.updater.signal.progress_update.connect(
+        #     self.handle_progress_update)
         # self.updater.signal.start_download.connect(self.handle_start_download)
         # self.updater.signal.check_for_update.connect(
         #     self.handle_check_for_update)
@@ -104,8 +106,22 @@ class MainWindow(QtWidgets.QWidget):
     #     print('got\n')
     #     print(update_object)
     #     if update_object['available']:
+    #         print('re connect to do_update')
     #         self.update_btn.setText('update')
     #         self.update_btn.clicked.connect(self.do_update)
+
+    # def handle_start_download(self, app_size):
+    #     print('got app size: {}'.format(str(app_size)))
+    #     self.progress.reset()
+    #     self.progress.show()
+    #     self.progress.setMaximum(app_size)
+
+    # def handle_progress_update(self, progress):
+    #     # print('progress update: {}'.format(str(progress)))
+    #     self.progress.setValue(progress)
+
+    # def handle_download_finished(self):
+    #     print('download finish')
 
     # def check_for_update(self):
     #     self.updater.start()

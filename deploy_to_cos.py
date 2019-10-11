@@ -58,7 +58,7 @@ class Uploader():
     @property
     def __file_name(self):
         return {
-            'mac': 'CNKI-Converter-darwin.app.tar',
+            'mac': 'CNKI-Converter-macOS.app.tar',
             'win': 'CNKI-Converter-windows.exe',
             # 'linux': ''
         }[self.__os]

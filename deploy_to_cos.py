@@ -18,6 +18,7 @@ from os import getenv
 from platform import system
 
 from qcloud_cos import CosConfig, CosS3Client
+from utils import os_type
 
 logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 
@@ -31,14 +32,7 @@ class Uploader():
         """
         assert app_name
         self.app_name = app_name
-
-        sys_info = system().lower()
-        if 'darwin' in sys_info:
-            self.__os = 'mac'
-        elif 'windows' in sys_info:
-            self.__os = 'win'
-        else:
-            self.__os = 'linux'
+        self.__os = os_type()
 
         secret_id = getenv('COS_SECRETID')
         secret_key = getenv('COS_SECRETKEY')

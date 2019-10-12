@@ -12,10 +12,12 @@
 2. QRunnable object will be deleted, Internal C++ object, after ran if it's un-referenced.
 """
 import sys
+from os import getenv
 
 from PySide2 import QtCore, QtWidgets
 
 from converter import converter
+from utils import window_size
 # from update import Updater
 
 
@@ -67,7 +69,7 @@ class MainWindow(QtWidgets.QWidget):
         self.item_count = 0
 
         self.setWindowTitle("Converter - by cms")
-        self.setFixedSize(250, 140)
+        self.setFixedSize(*window_size())
 
         # self.update_btn = QtWidgets.QPushButton(text='check for update')
         # self.update_btn.clicked.connect(self.check_for_update)

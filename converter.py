@@ -17,12 +17,19 @@ month_abbr = [
 
 
 def rand_code():
-    """return random code"""
+    """Generate random code"""
     return ''.join(choices(list('abcdefghijkl'), k=5))
 
 
 def reader(filepath):
-    """ref file reader: return list of {key: value}"""
+    """Ref file reader
+
+    Args:
+        filepath: (str)
+
+    Returns:
+        [{str: str},]
+    """
     dynamic_item = {}
     with open(filepath, 'r+', encoding='utf-8') as f:
         for line in f.readlines():
@@ -41,12 +48,29 @@ def reader(filepath):
 
 
 def adapter(adp_name):
-    """ref adapters"""
+    """Ref file adapter
+
+    Args:
+        adp_name: (str) adapter name
+
+    Returns:
+        (func)
+    """
     def to_pages(p):
+        """To pages
+
+        Args:
+            p: (str)
+        """
         sp, ep = p.split('-')
         return sp, ep
 
     def to_entry(item):
+        """To entry
+
+        Args:
+            item: (dict)
+        """
         result = ""
         for k, v in item.items():
             if k == 'A1':
@@ -58,6 +82,11 @@ def adapter(adp_name):
         return result
 
     def endnote(item):
+        """Endnote adapter
+
+        Args:
+            item: (dict)
+        """
         mapping = {
             '%0': 'TY',  # type ok
             '%A': 'A1',  # 1st author ok
@@ -102,6 +131,15 @@ def adapter(adp_name):
 
 
 def dump(orig_file_name, lines):
+    """Dump file
+
+    Args:
+        orig_file_name: (str) original file name
+        lines: ([str,])
+
+    Returns:
+        (str): file path
+    """
     head, tail = split(orig_file_name)
     fp = None
     while True:
@@ -117,7 +155,10 @@ def dump(orig_file_name, lines):
 def converter(filepath):
     """converter
 
-    Return:
+    Args:
+        filepath: (str)
+
+    Returns:
         dumpfile_path, item_count
     """
     all_lines = ""

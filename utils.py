@@ -3,6 +3,7 @@ from platform import system
 
 
 def os_type():
+    """get os type"""
     sys = system().lower()
     if 'darwin' in sys:
         return 'mac'
@@ -13,6 +14,7 @@ def os_type():
 
 
 def window_size():
+    """get window size"""
     sizes = {'win': 'WIN_APP_WINDOW_SIZE',
              'mac': 'MAC_APP_WINDOW_SIZE', 'linux': 'LINUX_APP_WINDOW_SIZE'}
     return tuple(int(i)

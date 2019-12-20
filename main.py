@@ -22,12 +22,20 @@ from utils import window_size
 
 
 class ConverterSignals(QtCore.QObject):
+    """Class for Converter Signal"""
     finished = QtCore.Signal()
     result = QtCore.Signal(object)
 
 
 class Converter(QtCore.QRunnable):
+    """Converter runnable task object"""
+
     def __init__(self, files=[]):
+        """Init
+
+        Args:
+            files: ([str, ]) files to be converted
+        """
         super(Converter, self).__init__()
         self.signals = ConverterSignals()
         self.files = files
@@ -38,6 +46,7 @@ class Converter(QtCore.QRunnable):
         }
 
     def run(self):
+        """Start converting"""
         for filepath in self.files:
             try:
                 dump, count = converter(filepath)
@@ -53,10 +62,13 @@ class Converter(QtCore.QRunnable):
         self.signals.result.emit(self.result)
 
     def start(self):
+        """Start converting in QThreadPool"""
         QtCore.QThreadPool.globalInstance().start(self)
 
 
 class MainWindow(QtWidgets.QWidget):
+    """Converter main window"""
+
     def __init__(self):
         super().__init__()
 
@@ -133,15 +145,22 @@ class MainWindow(QtWidgets.QWidget):
     #     self.updater.start()
 
     def file_hover(self):
+        """Handle file hovering"""
         self.setStyleSheet("background-color: #414145; color: white")
         self.text.setText('Oh yeah, put down')
         self.logo.setText(self.hover_logo_content)
 
     def waiting(self):
+        """Set indicator when task is running background"""
         self.logo.setText(self.waiting_logo_content)
         self.text.setText(self.intro)
 
     def running(self, files_count):
+        """Set indicator when task is running
+
+        Args:
+            files_count: (int) count of total files to be converted
+        """
         self.setStyleSheet("")
         self.progress.show()
         self.progress.setMaximum(files_count)
@@ -150,6 +169,16 @@ class MainWindow(QtWidgets.QWidget):
         self.text.setText("Converting...")
 
     def show_msg(self, title, text, information, icon=None):
+        """Show message in window
+
+        Args:
+            title: (str) window title
+            text: (str) main text
+            information: (str) extra information
+            icon: (QtWidgets.QMessageBox.[
+                    Question|Information|Warning|Critical
+                ]) icon
+        """
         msg = QtWidgets.QMessageBox(self)
         msg.setWindowTitle(title)
         if icon:
@@ -160,6 +189,7 @@ class MainWindow(QtWidgets.QWidget):
 
     @QtCore.Slot()
     def complete(self, result):
+        """Slot for task complete"""
         self.show_msg(
             'Success', 'Convertion complete!',
             'All {} file(s), success {} file(s), Overall {} references.\n\nRefMan exported files are in:\n{}\n\n{}'.format(
@@ -177,17 +207,33 @@ class MainWindow(QtWidgets.QWidget):
 
     @QtCore.Slot()
     def update_progress(self):
+        """Slot for progress update"""
         self.progress.setValue(self.progress.value() + 1)
 
     def dragEnterEvent(self, e):
+        """Event handler for draging object over window
+
+        Args:
+            e: (QEvent)
+        """
         if e.mimeData().hasUrls():
             e.acceptProposedAction()
             self.file_hover()
 
     def dragLeaveEvent(self, e):
+        """Event handler for dragging object leaving window
+
+        Args:
+            e: (QEvent)
+        """
         self.waiting()
 
     def dropEvent(self, e):
+        """Event handler for dragging object drop over window
+
+        Args:
+            e: (QEvent)
+        """
         files = [url.toLocalFile() for url in e.mimeData().urls()]
         self.waiting()
         self.running(len(files))

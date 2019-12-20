@@ -24,6 +24,9 @@ logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 
 
 class Uploader():
+    """Uploader
+    """
+
     def __init__(self, app_name=None):
         """init
 

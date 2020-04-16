@@ -4,6 +4,8 @@
 
 ## 用法
 
+使用 python3 运行本脚本
+
 ```bash
 python3 cli.py --help
 ```

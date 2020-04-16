@@ -4,7 +4,6 @@
 # Author: MingshiCai i@unoiou.com
 # Date: 2020-04-16 15:44:50
 import click
-import traceback
 
 from converter import converter
 

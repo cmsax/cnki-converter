@@ -1,19 +1,16 @@
-
-
 %0 Journal Article
 %A 吴继琴
 %+ 江西旅游商贸职业学院;
-%T Fairclough三维分析模型下的话语分析——以江西企业“走出去”通事语言为例
+%T Fairclough 三维分析模型下的话语分析——以江西企业“走出去”通事语言为例
 %J 九江职业技术学院学报
 %D 2019
 %N 03
-%K Fairclough三维分析模型;;话语分析;;“走出去”通事语言;;描述阶段;;阐释阶段;;解释阶段
-%X “一带一路”倡议背景下,江西企业“走出去”取得巨大成绩。如何利用通事语言降低跨文化冲突带来的经营风险,成为江西企业“走出去”必须认真面对且亟待解决的重要课题。本文以江西企业“走出去”通事语言为例,借鉴Fairclough三维分析模型,从描述、阐释和解释三个阶段进行话语分析,从而证实Fairclough三维分析模型具有适用性和解释性,也为江西企业“走出去”通事语言问题研究提供新思路。
-%P 1-5
+%K Fairclough 三维分析模型;;话语分析;;“走出去”通事语言;;描述阶段;;阐释阶段;;解释阶段
+%X “一带一路”倡议背景下,江西企业“走出去”取得巨大成绩。如何利用通事语言降低跨文化冲突带来的经营风险,成为江西企业“走出去”必须认真面对且亟待解决的重要课题。本文以江西企业“走出去”通事语言为例,借鉴 Fairclough 三维分析模型,从描述、阐释和解释三个阶段进行话语分析,从而证实 Fairclough 三维分析模型具有适用性和解释性,也为江西企业“走出去”通事语言问题研究提供新思路。
+%P 1
 %@ 1009-9522
 %L 36-1247/Z
 %W CNKI
-
 
 %0 Journal Article
 %A 赵亚欧
@@ -22,17 +19,14 @@
 %A 付宪瑞
 %A 生伟
 %+ 浪潮集团金融信息技术有限公司;济南大学信息科学与工程学院;山东大学控制科学与工程学院;
-%T 融合ELMo和多尺度卷积神经网络的情感分析
+%T 融合 ELMo 和多尺度卷积神经网络的情感分析
 %J 计算机应用
-%K 情感分析;;自然语言处理;;卷积神经网络;;ELMo模型;;字向量
-%X 针对Word2Vec、Glo Ve等词嵌入技术只能产生单一语义向量的问题,提出一种融合ELMo和多尺度卷积神经网络的情感分析模型。首先,该模型利用ELMo模型学习预训练语料,生成上下文相关的词向量;相比于传统词嵌入技术,ELMo模型利用双向LSTM网络融合词语本身特征和词语上下文特征,能够精确表示多义词的多个不同语义。此外,该模型使用预训练的中文字符向量初始化ELMo模型的嵌入层,相对于随机初始化,该方法可加快模型的训练速度,提高训练精度。然后,该模型利用多尺度卷积神经网络,对词向量的特征进行二次抽取,并进行特征融合,生成句子的整体语义表示;最后,经过softmax激励函数实现文本情感倾向的分类。实验在公开的酒店评论和NLPCC2014 task2两个数据集上进行,实验结果表明,在酒店评论数据集上与基于注意力的双向LSTM模型相比,该模型正确率提升了1.08个百分点,在NLPCC2014 task2数据集上与LSTM和CNN的混合模型相比,该模型正确率提升了2.16个百分点,证明了所提方法的有效性。
+%K 情感分析;;自然语言处理;;卷积神经网络;;ELMo 模型;;字向量
+%X 针对 Word2Vec、Glo Ve 等词嵌入技术只能产生单一语义向量的问题,提出一种融合 ELMo 和多尺度卷积神经网络的情感分析模型。首先,该模型利用 ELMo 模型学习预训练语料,生成上下文相关的词向量;相比于传统词嵌入技术,ELMo 模型利用双向 LSTM 网络融合词语本身特征和词语上下文特征,能够精确表示多义词的多个不同语义。此外,该模型使用预训练的中文字符向量初始化 ELMo 模型的嵌入层,相对于随机初始化,该方法可加快模型的训练速度,提高训练精度。然后,该模型利用多尺度卷积神经网络,对词向量的特征进行二次抽取,并进行特征融合,生成句子的整体语义表示;最后,经过 softmax 激励函数实现文本情感倾向的分类。实验在公开的酒店评论和 NLPCC2014 task2 两个数据集上进行,实验结果表明,在酒店评论数据集上与基于注意力的双向 LSTM 模型相比,该模型正确率提升了 1.08 个百分点,在 NLPCC2014 task2 数据集上与 LSTM 和 CNN 的混合模型相比,该模型正确率提升了 2.16 个百分点,证明了所提方法的有效性。
 %P 1-9
 %@ 1001-9081
 %L 51-1307/TP
 %W CNKI
-
-
-
 
 %0 Journal Article
 %A 王鑫
@@ -42,14 +36,11 @@
 %T 基于显著性特征提取的图像描述算法
 %J 自动化学报
 %K 图像描述;;显著性特征提取;;语言模型;;编码器;;解码器
-%X 图像描述(Image Captioning)是一个融合了计算机视觉和自然语言处理这两个领域的研究方向,本文为图像描述设计了一种新颖的显著性特征提取机制(Salient Feature Extraction Mechanism,SFEM),能够在语言模型预测每一个单词之前快速地向语言模型提供最有价值的视觉特征来指导单词预测,有效解决了现有方法对视觉特征选择不准确以及时间性能不理想的问题. SFEM包含全局显著性特征提取器和即时显著性特征提取器这两个部分:全局显著性特征提取器能够从多个局部视觉向量中提取出显著性视觉特征,并整合这些特征到全局显著性视觉向量中;即时显著性特征提取器能够根据语言模型的需要,从全局显著性视觉向量中提取出预测每一个单词所需的显著性视觉特征.我们在MS COCO数据集上对SFEM进行了评估,实验结果表明SFEM能够显著提升baseline生成图像描述的准确性,并且SFEM在生成图像描述的准确性方面明显优于广泛使用的空间注意力模型,在时间性能上也大幅领先空间注意力模型.
+%X 图像描述(Image Captioning)是一个融合了计算机视觉和自然语言处理这两个领域的研究方向,本文为图像描述设计了一种新颖的显著性特征提取机制(Salient Feature Extraction Mechanism,SFEM),能够在语言模型预测每一个单词之前快速地向语言模型提供最有价值的视觉特征来指导单词预测,有效解决了现有方法对视觉特征选择不准确以及时间性能不理想的问题. SFEM 包含全局显著性特征提取器和即时显著性特征提取器这两个部分:全局显著性特征提取器能够从多个局部视觉向量中提取出显著性视觉特征,并整合这些特征到全局显著性视觉向量中;即时显著性特征提取器能够根据语言模型的需要,从全局显著性视觉向量中提取出预测每一个单词所需的显著性视觉特征.我们在 MS COCO 数据集上对 SFEM 进行了评估,实验结果表明 SFEM 能够显著提升 baseline 生成图像描述的准确性,并且 SFEM 在生成图像描述的准确性方面明显优于广泛使用的空间注意力模型,在时间性能上也大幅领先空间注意力模型.
 %P 1-12
 %@ 0254-4156
 %L 11-2109/TP
 %W CNKI
-
-
-
 
 %0 Journal Article
 %A Meghan M. Parkinson
@@ -63,7 +54,6 @@
 %@ 0346-251X
 %W CNKI
 
-
 %0 Journal Article
 %A Tatsuya Daikoku
 %+ Department of Neuropsychology, Max Planck Institute for Human Cognitive and Brain Sciences, Stephanstraße 1a, 04103 Leipzig, Germany
@@ -72,7 +62,6 @@
 %D 2019
 %@ 1571-0645
 %W CNKI
-
 
 %0 Journal Article
 %A Olga Fourkioti
@@ -88,7 +77,6 @@
 %X Abstract(#br)We deal with the task of authorship attribution, i.e. identifying the author of an unknown document, proposing the use of Part Of Speech (POS) tags as features for language modeling. The experimentation is carried out on corpora untypical for the task, i.e., with documents edited by non-professional writers, such as movie reviews or tweets. The former corpus is homogeneous with respect to the topic making the task more challenging, The latter corpus, puts language models into a framework of a continuously and fast evolving language, unique and noisy writing style, and limited length of social media messages. While we find that language models based on POS tags are competitive in only one of the corpora (movie reviews), they generally provide efficiency benefits and robustness against data sparsity. Furthermore, we experiment with model fusion, where language models based on different modalities are combined. By linearly combining three language models, based on characters, words, and POS trigrams, respectively, we achieve the best generalization accuracy of 96% on movie reviews, while the combination of language models based on characters and POS trigrams provides 54% accuracy on the Twitter corpus. In fusion, POS language models are proven essential effective components.
 %@ 0306-4573
 %W CNKI
-
 
 %0 Journal Article
 %A Jacob Raber
@@ -125,7 +113,6 @@
 %@ 0149-7634
 %W CNKI
 
-
 %0 Journal Article
 %A Brianna L. Yamasaki
 %A Andrea Stocco
@@ -141,7 +128,6 @@
 %@ 0093-934X
 %W CNKI
 
-
 %0 Journal Article
 %A Guo Zhiqiang
 %A Ling Zhenhua
@@ -156,7 +142,6 @@
 %X BACKGROUND(#br)Recently, many studies have been carried out to detect Alzheimer's disease (AD) from continuous speech by linguistic analysis and modeling. However, few of them utilize language models (LMs) to extract linguistic features and to investigate the lexical-level differences between AD and healthy speech.(#br)OBJECTIVE(#br)Our goals include obtaining state-of-art performance of automatic AD detection, emphasizing N-gram LMs as powerful tools for distinguishing AD patients' narratives from those of healthy controls, and discovering the differences of lexical usages between AD patients and healthy people.(#br)METHOD(#br)We utilize a subset of the DementiaBank corpus, including 242 control samples from 99 control participants and 256 AD samples from 169 "PossibleAD" or "ProbableAD" participants. Baseline models are built through area under curve-based feature selection and using five machine learning algorithms for comparison. Perplexity features are extracted using LMs to build enhanced detection models. Finally, the differences of lexical usages between AD patients and healthy people are investigated by a proportion test based on unigram probabilities.(#br)RESULTS(#br)Our baseline model obtains a detection accuracy of 80.7%. This accuracy increases to 85.4% after integrating the perplexity features derived from LMs. Further investigations show that AD patients tend to use more general, less informative, and less accurate words to describe characters and actions than healthy controls.(#br)CONCLUSION(#br)The perplexity features extracted by LMs can benefit the automatic AD detection from continuous speech. There exist lexical-level differences between AD and healthy speech that can be captured by statistical N-gram LMs.
 %W CNKI
 
-
 %0 Journal Article
 %A Daikoku Tatsuya
 %+ Department of Neuropsychology, Max Planck Institute for Human Cognitive and Brain Sciences, Stephanstraße 1a, 04103 Leipzig, Germany. Electronic address: tdaikoku-tky@umin.org.
@@ -164,7 +149,6 @@
 %J Physics of life reviews
 %D 2019
 %W CNKI
-
 
 %0 Journal Article
 %A Kim Judy S
@@ -175,7 +159,6 @@
 %J Proceedings of the National Academy of Sciences of the United States of America
 %D 2019
 %W CNKI
-
 
 %0 Journal Article
 %A Lee Jinhyuk
@@ -191,7 +174,6 @@
 %D 2019
 %X MOTIVATION(#br)Biomedical text mining is becoming increasingly important as the number of biomedical documents rapidly grows. With the progress in natural language processing, extracting valuable information from biomedical literature has gained popularity among researchers, and deep learning has boosted the development of effective biomedical text mining models. However, directly applying the advancements in natural language processing to biomedical text mining often yields unsatisfactory results due to a word distribution shift from general domain corpora to biomedical corpora. In this paper, we investigate how the recently introduced pre-trained language model BERT can be adapted for biomedical corpora.(#br)RESULTS(#br)We introduce BioBERT (Bidirectional Encoder Representations from Transformers for Biomedical Text Mining), which is a domain specific language representation model pre-trained on large-scale biomedical corpora. With almost the same architecture across tasks, BioBERT largely outperforms BERT and previous state-of-the-art models in a variety of biomedical text mining tasks when pre-trained on biomedical corpora. While BERT obtains performance comparable to that of previous state-of-the-art models, BioBERT significantly outperforms them on the following three representative biomedical text mining tasks: biomedical named entity recognition (0.62% F1 score improvement), biomedical relation extraction (2.80% F1 score improvement), and biomedical question answering (12.24% MRR improvement). Our analysis results show that pre-training BERT on biomedical corpora helps it to understand complex biomedical texts.(#br)AVAILABILITY AND IMPLEMENTATION(#br)We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.(#br)SUPPLEMENTARY INFORMATION(#br)Supplementary data are available at Bioinformatics online.
 %W CNKI
-
 
 %0 Journal Article
 %A Raber Jacob
@@ -227,7 +209,6 @@
 %X Fear is an emotion that serves as a driving factor in how organisms move through the world. In this review, we discuss the current understandings of the subjective experience of fear and the related biological processes involved in fear learning and memory. We first provide an overview of fear learning and memory in humans and animal models, encompassing the neurocircuitry and molecular mechanisms, the influence of genetic and environmental factors, and how fear learning paradigms have contributed to treatments for fear-related disorders, such as posttraumatic stress disorder. Current treatments as well as novel strategies, such as targeting the perisynaptic environment and use of virtual reality, are addressed. We review research on the subjective experience of fear and the role of autobiographical memory in fear-related disorders. We also discuss the gaps in our understanding of fear learning and memory, and the degree of consensus in the field. Lastly, the development of linguistic tools for assessments and treatment of fear learning and memory disorders is discussed.
 %W CNKI
 
-
 %0 Journal Article
 %A Yamasaki Brianna L
 %A Stocco Andrea
@@ -242,7 +223,6 @@
 %X Bilingual language control is characterized by the ability to select from amongst competing representations based on the current language in use. According to the Conditional Routing Model (CRM), this feat is underpinned by basal-ganglia signal-routing mechanisms, and may have implications for cognitive flexibility. The current experiment used dynamic causal modeling of fMRI data to compare network-level brain functioning in monolinguals and bilinguals during a task that required productive (semantic decision) and receptive (language) switches. Consistent with the CRM, results showed that: (1) both switch types drove activation in the basal ganglia, (2) bilinguals and monolinguals differed in the strength of influence of dorsolateral prefrontal cortex (DLPFC) on basal ganglia, and (3) differences in bilingual language experience were marginally related to the strength of influence of the switching drives onto basal ganglia. Additionally, a task-by-group interaction was found, suggesting that when bilinguals engaged in language-switching, their task-switching costs were reduced.
 %W CNKI
 
-
 %0 Journal Article
 %A Malaia Evie A
 %A Wilbur Ronnie B
@@ -253,7 +233,6 @@
 %K Entrainment;Parsing;Segmentation;Sign language;Syllable
 %X To understand human language-both spoken and signed-the listener or viewer has to parse the continuous external signal into components. The question of what those components are (e.g., phrases, words, sounds, phonemes?) has been a subject of long-standing debate. We re-frame this question to ask: What properties of the incoming visual or auditory signal are indispensable to eliciting language comprehension? In this review, we assess the phenomenon of language parsing from modality-independent viewpoint. We show that the interplay between dynamic changes in the entropy of the signal and between neural entrainment to the signal at syllable level (4-5 Hz range) is causally related to language comprehension in both speech and sign language. This modality-independent Entropy Syllable Parsing model for the linguistic signal offers insight into the mechanisms of language processing, suggesting common neurocomputational bases for syllables in speech and sign language. This article is categorized under: Linguistics > Linguistic Theory Linguistics > Language in Mind and Brain Linguistics > Computational Models of Language Psychology > Language.
 %W CNKI
-
 
 %0 Journal Article
 %A Carole Bignell
@@ -268,14 +247,12 @@
 %@ 1741-4350
 %W CNKI
 
-
 %0 Journal Article
 %T Science - Language and Communication Science; University of Southampton Details Findings in Language and Communication Science (A model for L1 grammatical attrition)
 %J Science Letter
 %D 2019
 %@ 1538-9111
 %W CNKI
-
 
 %0 Journal Article
 %A Marcia Sytsma
@@ -292,7 +269,6 @@
 %@ 1537-7903
 %W CNKI
 
-
 %0 Journal Article
 %A Marco Rospocher
 %A Francesco Corcoglioniti
@@ -308,7 +284,6 @@
 %@ 1574-020X
 %W CNKI
 
-
 %0 Journal Article
 %A O.G. Shevchenko
 %T Promotion of a New Model of Learning of Second Language Intonation
@@ -316,7 +291,6 @@
 %D 2019
 %X The article is aimed at identifying the efficiency of a new strategy of learning English intonation. The authors show how learners employed the aspects of intonation with regular guidance and feedback through multi staged process. The authors present a model where students learn to work autonomously stating the aims and goals, working out learning strategies. This article reports on activities as a route towards promoting autonomous use of the BBC&apos;s online dialogues in and outside the classroom to enhance the second language ability in intonation presentation in increasingly informed and successful manner.
 %W CNKI
-
 
 %0 Thesis
 %A 张建华
@@ -328,19 +302,19 @@
 %K 语音识别;;深度学习;;特征提取;;声学建模;;深度神经网络;;卷积神经网络
 %X 随着智能家居、车载语音系统以及各种语音识别软件流行,语音识别逐渐走进人们的视野,凭借其实用性准确性得到了广大用户的喜爱,同时语音识别作为人机交互的重要接口,成为人工智能领域研究的重点。在大数据的背景下,深度学习得到长足的发展,由于它对海量数据超强的建模能力,被广泛应用与图像、语音识别,并取得了惊人的效果。考虑到理论意义和实用价值,在深度学习的基础上研究语音识别是一个可行的方向。深度学习是一种多层非线性变换网络,通过大量的有监督参数调整计算来建模数据间的复杂关系。本文详细介绍了语音识别以及深度学习的基本原理,然后阐述了怎样将深度学习高效的应用与语音识别中。
 
-	1、基于深度神经网络的声学特征提取研究
+    1、基于深度神经网络的声学特征提取研究
 
-	深度神经网络是一种有监督训练的多层网络,主要用于分类问题,但是截取它的一部分训练好的网络用于特征转换,新生成的特征在语音识别上相比于MFCC特征也有很好的表现。本文主要从深度神经网络的预训练、参数调整、系统优化方面进行了研究,并在Kaldi平台上搭建了用于语音特征提取的深度神经网络,从MFCC特征中提取鲁棒性区分性更强的语音特征,并用这些新特征训练基于GMM-HMM的声学模型搭建语音识别系统,最好的DNN网络与原始MFCC训练的声学模型搭建的系统相比,在词错误率和句错误率上下降了1.98%和4.21%
+    深度神经网络是一种有监督训练的多层网络,主要用于分类问题,但是截取它的一部分训练好的网络用于特征转换,新生成的特征在语音识别上相比于MFCC特征也有很好的表现。本文主要从深度神经网络的预训练、参数调整、系统优化方面进行了研究,并在Kaldi平台上搭建了用于语音特征提取的深度神经网络,从MFCC特征中提取鲁棒性区分性更强的语音特征,并用这些新特征训练基于GMM-HMM的声学模型搭建语音识别系统,最好的DNN网络与原始MFCC训练的声学模型搭建的系统相比,在词错误率和句错误率上下降了1.98%和4.21%
 
-	2、基于深度神经网络的声韵母属性提取研究
+    2、基于深度神经网络的声韵母属性提取研究
 
-	声韵母属性属于语音属性的一种,它可以看做是语音识别中比声韵母更小的基元,用这种粒度更小的基元更能细致的描述语音现象,而且这种方法在以前语音基于概率统计的基础上加入了语音知识的东西,提高系统的识别性能。本文主要研究了语音属性的基础理论,并从语音属性的提取入手,结合了深度学习的原理,搭建了语音属性提取器,用提取出的语音属性搭建了基于GMM-HM M和基于DNN-HMM的声韵母识别器,通过与MFCC搭建的声韵母识别器比较,在声韵母识别率上分别有0.65%和1.37%的提升,通过与MFCC搭建的语音识别器比较,在词识别错误率上有5.61%的下降。
+    声韵母属性属于语音属性的一种,它可以看做是语音识别中比声韵母更小的基元,用这种粒度更小的基元更能细致的描述语音现象,而且这种方法在以前语音基于概率统计的基础上加入了语音知识的东西,提高系统的识别性能。本文主要研究了语音属性的基础理论,并从语音属性的提取入手,结合了深度学习的原理,搭建了语音属性提取器,用提取出的语音属性搭建了基于GMM-HM M和基于DNN-HMM的声韵母识别器,通过与MFCC搭建的声韵母识别器比较,在声韵母识别率上分别有0.65%和1.37%的提升,通过与MFCC搭建的语音识别器比较,在词识别错误率上有5.61%的下降。
 
-	3、基于深度学习的声学建模研究
+    3、基于深度学习的声学建模研究
 
-	有监督的深度网络本质上是区分性模型,通过用建模能力强大的深度网络取代浅层GMM模型做状态输出,并与HMM模型结合训练声学模型。在Kaldi上分别实现了基于GMM-HMM、基于DNN-HMM和基于CNN-HMM,并在863语料上通过实验证明了基于DNN-HMM和基于CNN-HMM的声学模型搭建的系统比GMM-HMM的系统在词识别错误率上分别有7.98%和9.01%的下降。并对三种方法进行了比较分析。
+    有监督的深度网络本质上是区分性模型,通过用建模能力强大的深度网络取代浅层GMM模型做状态输出,并与HMM模型结合训练声学模型。在Kaldi上分别实现了基于GMM-HMM、基于DNN-HMM和基于CNN-HMM,并在863语料上通过实验证明了基于DNN-HMM和基于CNN-HMM的声学模型搭建的系统比GMM-HMM的系统在词识别错误率上分别有7.98%和9.01%的下降。并对三种方法进行了比较分析。
+
 %W CNKI
-
 
 %0 Journal Article
 %A 奚雪峰
@@ -358,7 +332,6 @@
 %L 11-2109/TP
 %W CNKI
 
-
 %0 Thesis
 %A 马俊
 %T 语音识别技术研究
@@ -368,13 +341,6 @@
 %D 2004
 %K 语音识别;特征提取;动态时间规整;隐马尔可夫;基音周期估值
 %X 语音识别拥有可观的应用背景，同时作为一个交叉学科也具有深远的理论研究价值。本文分别采用动态时间规整模型和隐马尔科夫模型，实现了孤立词语音识别方案。并探讨语音识别在硬件上的实现以及基音周期估值等具体问题。
-
-
-
-
-
-
-
 
     语音识别的理论模型对系统的构建具有指导意义，本文首先分析了语音识别系统的层次结构，阐明不同任务的模型选取问题。然后按照方案处理的步骤详细的论述了语音识别的流程，并应用动态时间规整模型实现孤立词识别。
 
@@ -395,43 +361,41 @@
 
 
     文章最后探讨了语音识别算法在硬件平台上的移植，重点考虑流程的改变、数据的处理和算法实时实现几个问题。结合FPGA特点，讨论简化短时自相关函数法实现基音周期的估值，并介绍单bit方法应用于语音信号频域分析。
-%W CNKI
 
+%W CNKI
 
 %0 Journal Article
 %A 王灿辉
 %A 张敏
 %A 马少平
-%+ 清华大学计算机科学与技术系,清华大学计算机科学与技术系,清华大学计算机科学与技术系 北京100084,北京100084,北京100084
+%+ 清华大学计算机科学与技术系,清华大学计算机科学与技术系,清华大学计算机科学与技术系 北京 100084,北京 100084,北京 100084
 %T 自然语言处理在信息检索中的应用综述
 %J 中文信息学报
 %D 2007
 %N 02
 %K 人工智能;;自然语言处理;;综述;;信息检索
-%X 在信息检索①发展的过程中,研究者们不断尝试着将自然语言处理应用到检索里,希望能够为检索效果提高带来帮助。然而这些尝试的结果大多和研究者们最初的设想相反,自然语言处理在大多数情况下没有改进信息检索效果,甚至反而起了负面作用。即便有一些帮助,也往往是微小的,远远不如自然语言处理所需要的计算消耗那么大。研究者们对这些现象进行了分析,认为:自然语言处理更适合于应用在需要精确结果的任务中,例如问答系统、信息抽取等;自然语言处理需要针对信息检索进行优化才可能发挥积极作用。最新的一些进展(例如在语言模型中加入自然语言处理)在一定程度上印证了这一结论。
+%X 在信息检索 ① 发展的过程中,研究者们不断尝试着将自然语言处理应用到检索里,希望能够为检索效果提高带来帮助。然而这些尝试的结果大多和研究者们最初的设想相反,自然语言处理在大多数情况下没有改进信息检索效果,甚至反而起了负面作用。即便有一些帮助,也往往是微小的,远远不如自然语言处理所需要的计算消耗那么大。研究者们对这些现象进行了分析,认为:自然语言处理更适合于应用在需要精确结果的任务中,例如问答系统、信息抽取等;自然语言处理需要针对信息检索进行优化才可能发挥积极作用。最新的一些进展(例如在语言模型中加入自然语言处理)在一定程度上印证了这一结论。
 %P 35-45
 %@ 1003-0077
 %L 11-2325/N
 %W CNKI
-
 
 %0 Journal Article
 %A 洪宇
 %A 张宇
 %A 刘挺
 %A 李生
-%+ 哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室 黑龙江哈尔滨150001,黑龙江哈尔滨150001,黑龙江哈尔滨150001,黑龙江哈尔滨150001
+%+ 哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室,哈尔滨工业大学计算机科学与技术学院信息检索研究室 黑龙江哈尔滨 150001,黑龙江哈尔滨 150001,黑龙江哈尔滨 150001,黑龙江哈尔滨 150001
 %T 话题检测与跟踪的评测及研究综述
 %J 中文信息学报
 %D 2007
 %N 06
 %K 计算机应用;;中文信息处理;;综述;;话题检测与跟踪;;自然语言处理;;事件;;新闻报道
-%X 话题检测与跟踪是一项面向新闻媒体信息流进行未知话题识别和已知话题跟踪的信息处理技术。自从1996年前瞻性的探索以来,该领域进行的多次大规模评测为信息识别、采集和组织等相关技术提供了新的测试平台。由于话题检测与跟踪相对于信息检索、信息挖掘和信息抽取等自然语言处理技术具备很多共性,并面向具备突发性和延续性规律的新闻语料,因此逐渐成为当前信息处理领域的研究热点。本文简要介绍了话题检测与跟踪的研究背景、任务定义、评测方法以及相关技术,并通过分析目前TDT领域的研究现状展望未来的发展趋势。
+%X 话题检测与跟踪是一项面向新闻媒体信息流进行未知话题识别和已知话题跟踪的信息处理技术。自从 1996 年前瞻性的探索以来,该领域进行的多次大规模评测为信息识别、采集和组织等相关技术提供了新的测试平台。由于话题检测与跟踪相对于信息检索、信息挖掘和信息抽取等自然语言处理技术具备很多共性,并面向具备突发性和延续性规律的新闻语料,因此逐渐成为当前信息处理领域的研究热点。本文简要介绍了话题检测与跟踪的研究背景、任务定义、评测方法以及相关技术,并通过分析目前 TDT 领域的研究现状展望未来的发展趋势。
 %P 71-87
 %@ 1003-0077
 %L 11-2325/N
 %W CNKI
-
 
 %0 Thesis
 %A 户保田
@@ -441,9 +405,8 @@
 %9 博士
 %D 2016
 %K 深度学习;;语言表示;;词向量;;语义匹配;;自动文摘
-%X 近年来,深度神经网络在诸如图像分类、语音识别等任务上被深入探索并取得了突出的效果,表现出了优异的表示学习能力。文本表示一直是自然语言处理领域的核心问题,传统的文本表示的维数灾难、数据稀疏等问题,已经成为大量自然语言处理任务性能提高的瓶颈。近年来,通过深度神经网络对文本学习表示逐渐成为一个新的研究热点。然而,由于人类语言的灵活多变以及语义信息的复杂抽象,深度神经网络模型在文本表示学习上的应用更为困难。本文旨在研究深度神经网络对不同粒度的文本学习表示,并将其应用于相关任务上。首先,对词向量的学习进行了研究。提出了一种基于动名分离的词向量学习模型。该模型将词性引入到词向量的学习过程,同时保持了词序信息。受人类大脑的动名分离结构的启发,在学习词向量的过程中,该模型根据词性标注工具得到的词性,动态的选择模型顶层的网络参数,从而实现模型的动名分离。与相关向量学习方法进行实验对比,结果显示该模型能够以相对较低的时间复杂度,学习得到高质量的词向量;通过其得到的常见词的相似词更为合理;在命名实体识别和组块分析任务上的性能,显著地优于其它对比的词向量。其次,对语句的表示学习进行了研究。提出了基于深度卷积神经网络的语句表示模型。该模型不依赖句法分析树,通过多层交叠的卷积和最大池化操作对语句进行建模。语句匹配对自然语言处理领域的大量任务非常重要。一个好的匹配模型,不仅需要对语句的内部结构进行合理建模,还需要捕捉到语句间不同层次的匹配模式。基于此,本文提出了两种基于深度卷积神经网络的语句匹配架构。架构一,首先通过两个卷积神经网络分别对两个语句进行表示,然后通过多层感知机进行匹配。架构二,则是对两个语句的匹配直接建模,然后通过多层感知机对匹配表示进行打分。两种匹配架构都无需任何先验知识,因此可被广泛应用于不同性质、不同语言的匹配任务上。在三种不同语言、不同性质的语句级匹配任务上的实验结果表明,本文提出的架构一和架构二远高于其他对比模型。相比架构一,架构二更能够有效地捕捉到两个语句间多层次的匹配模式,架构二在三种任务上取得了优异的性能。第三,对统计机器翻译中短语对的选择进行了研究。提出了上下文依赖的卷积神经网络短语匹配模型。该模型对目标短语对进行选择,不仅考虑到了源端短语与目标端短语的语义相似度,同时利用了源端短语的句子上下文信息。为了有效的对模型进行训练,提出使用上下文依赖的双语词向量初始化模型,同时设计了一种“课程式”的学习算法对模型进行从易到难、循序渐进的训练。实验表明,将该模型对双语短语的匹配打分融入到一个较强的统计机器翻译系统中,可以显著提高翻译性能,BLEU值提高了1.0%。自动生成进行了研究。构建了一个较高质量的大规模中文短文本摘要数据集,该数据集包括240多万的摘要,同时构造了一个高质量的测试集。提出使用基于循环神经网络的编码-解码架构从大规模数据集中自动学习生成摘要,构建了两个基于循环神经网络的摘要生成模型。模型一通过使用循环神经网络对原文进行建模,并将其最后一个状态作为原文段落的表示,利用另一个循环神经网络从该表示中解码生成摘要。模型二在模型一的基础上,通过动态的从编码阶段的循环神经网络的所有状态中综合得到上下文表示,然后将当前的上下文表示传递给解码循环神经网络生成摘要。两种模型都是产生式模型,无需任何人工特征。实验表明,两种模型能够对原文进行较为合理的表示,生成具有较高信息量的摘要文本。特别地,模型二生成的摘要文本质量显著优于模型一。综上所述,本文以深度神经网络为手段,以文本表示为研究对象,对自然语言中不同粒度的文本即词、句、段的表示学习及其应用进行了深入研究。本文将所提出的方法应用到了序列标注、语句匹配、机器翻译以及自动文摘生成问题上,并取得了良好的效果。
+%X 近年来,深度神经网络在诸如图像分类、语音识别等任务上被深入探索并取得了突出的效果,表现出了优异的表示学习能力。文本表示一直是自然语言处理领域的核心问题,传统的文本表示的维数灾难、数据稀疏等问题,已经成为大量自然语言处理任务性能提高的瓶颈。近年来,通过深度神经网络对文本学习表示逐渐成为一个新的研究热点。然而,由于人类语言的灵活多变以及语义信息的复杂抽象,深度神经网络模型在文本表示学习上的应用更为困难。本文旨在研究深度神经网络对不同粒度的文本学习表示,并将其应用于相关任务上。首先,对词向量的学习进行了研究。提出了一种基于动名分离的词向量学习模型。该模型将词性引入到词向量的学习过程,同时保持了词序信息。受人类大脑的动名分离结构的启发,在学习词向量的过程中,该模型根据词性标注工具得到的词性,动态的选择模型顶层的网络参数,从而实现模型的动名分离。与相关向量学习方法进行实验对比,结果显示该模型能够以相对较低的时间复杂度,学习得到高质量的词向量;通过其得到的常见词的相似词更为合理;在命名实体识别和组块分析任务上的性能,显著地优于其它对比的词向量。其次,对语句的表示学习进行了研究。提出了基于深度卷积神经网络的语句表示模型。该模型不依赖句法分析树,通过多层交叠的卷积和最大池化操作对语句进行建模。语句匹配对自然语言处理领域的大量任务非常重要。一个好的匹配模型,不仅需要对语句的内部结构进行合理建模,还需要捕捉到语句间不同层次的匹配模式。基于此,本文提出了两种基于深度卷积神经网络的语句匹配架构。架构一,首先通过两个卷积神经网络分别对两个语句进行表示,然后通过多层感知机进行匹配。架构二,则是对两个语句的匹配直接建模,然后通过多层感知机对匹配表示进行打分。两种匹配架构都无需任何先验知识,因此可被广泛应用于不同性质、不同语言的匹配任务上。在三种不同语言、不同性质的语句级匹配任务上的实验结果表明,本文提出的架构一和架构二远高于其他对比模型。相比架构一,架构二更能够有效地捕捉到两个语句间多层次的匹配模式,架构二在三种任务上取得了优异的性能。第三,对统计机器翻译中短语对的选择进行了研究。提出了上下文依赖的卷积神经网络短语匹配模型。该模型对目标短语对进行选择,不仅考虑到了源端短语与目标端短语的语义相似度,同时利用了源端短语的句子上下文信息。为了有效的对模型进行训练,提出使用上下文依赖的双语词向量初始化模型,同时设计了一种“课程式”的学习算法对模型进行从易到难、循序渐进的训练。实验表明,将该模型对双语短语的匹配打分融入到一个较强的统计机器翻译系统中,可以显著提高翻译性能,BLEU 值提高了 1.0%。自动生成进行了研究。构建了一个较高质量的大规模中文短文本摘要数据集,该数据集包括 240 多万的摘要,同时构造了一个高质量的测试集。提出使用基于循环神经网络的编码-解码架构从大规模数据集中自动学习生成摘要,构建了两个基于循环神经网络的摘要生成模型。模型一通过使用循环神经网络对原文进行建模,并将其最后一个状态作为原文段落的表示,利用另一个循环神经网络从该表示中解码生成摘要。模型二在模型一的基础上,通过动态的从编码阶段的循环神经网络的所有状态中综合得到上下文表示,然后将当前的上下文表示传递给解码循环神经网络生成摘要。两种模型都是产生式模型,无需任何人工特征。实验表明,两种模型能够对原文进行较为合理的表示,生成具有较高信息量的摘要文本。特别地,模型二生成的摘要文本质量显著优于模型一。综上所述,本文以深度神经网络为手段,以文本表示为研究对象,对自然语言中不同粒度的文本即词、句、段的表示学习及其应用进行了深入研究。本文将所提出的方法应用到了序列标注、语句匹配、机器翻译以及自动文摘生成问题上,并取得了良好的效果。
 %W CNKI
-
 
 %0 Thesis
 %A 张仕良
@@ -453,9 +416,8 @@
 %9 博士
 %D 2017
 %K 语音识别;;深度学习;;深度神经网络;;联合优化正交投影和估计;;固定长度依次遗忘编码;;前馈序列记忆神经网络
-%X 语音作为最自然、最有效的交流途径,一直是人机通信和交互领域最受关注的研究内容之一。自动语音识别的主要目的是让计算机能够"听懂"人类的语音.将语音波形信号转化成文本。它是实现智能的人机交互的关键技术之一。声学模型和语言模型是语音识别系统的两个核心模块。传统的语音识别系统普遍采用基于高斯混合模型和隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model,GMM-HMM)的声学模型以及n-gram语言模型。近年来,随着深度学习的兴起,基于深度神经网络的声学模型和语言模型相比于传统的GMM-HMM和n-gram模型分别都获得了显著的性能提升。在此背景下,本论文从深度神经网络的模型结构出发,展开了较为系统和深入的研究,一方面对现有的模型进行优化,另一方面结合语音及语言信号的特性探究新的网络结构模型,从而提高基于深度神经网络的语音识别系统的性能和训练效率。首先,本文研究了基于前馈全连接深度神经网络(Deep Neural Networks,DNN)的语音声学建模。我们分别探索了基于sigmoid非线性激活函数的DNN(sigmoid-DNN)和基于整流线性单元(Rectified Linear Units,ReLU)的 DNN(RL-DNN)的大词汇量连续语音识别。首先针对传统的sigmoid-DNN,我们通过研究发现其隐层权重越往高层稀疏性越强的特性,提出了一种隐层节点递减的DNN结构,命名为sDNN。实验结果表明sDNN可以在保持性能基本不变的情况下将模型参数量减少到45%,从而获得2倍的训练加速。进一步地我们提出将dropout预训练作为一种神经网络的初始化方法,可以获得相比于传统的无监督Pre-training更好的性能。然后我们针对RL-DNN的研究发现,通过合理的参数配置,可以采用基于大批量的随机梯度下降算法来训练RL-DNN,从而能够利用多个图形处理单元(Graphic Processing Unit,GPU)进行并行化训练,可以获得超过10倍的训练加速。进一步地我们提出了一种绑定标量规整的方法用于优化RL-DNN的训练,不仅使得训练更加稳定,而且能够获得显著的性能提升。其次,本文提出一种固定长度依次遗忘编码(Fixed-size Ordinally Forgetting Encoding,FOFE)方法用于语言模型建模。FOFE通过简单的顺序遗忘机制来对序列中的单词位置进行建模,可以将任何可变长度的单词序列唯一地编码成固定大小的表达。本研究中,我们提出基于FOFE的前馈神经网络语言模型(FOFE-FNNLM)。实验结果表明,在不使用任何反馈连接的情况下,基于FOFE的FNNLM显著的优于标准的基于1-of-k编码作为输入的FNNLM,同时也优于基于循环神经网络(Recurrent Neural Networks,RNN)的语言模型。再次,本文提出了一种新颖的神经网络结构,命名为前馈序列记忆神经网络(Feedforward Sequential Memory Networks,FSMN)。FSMN 可以对时序信号中的长时相关性(long-term dependency)进行建模而不需要使用反馈连接。本研究所提出来的FSMN可以认为是在标准的前馈全连接神经网络的隐藏层中配备了一些可学习的记忆模块。这些记忆模块使用抽头延迟线结构将长时上下文信息编码成固定大小的表达作为一种短时记忆机制。我们在语音识别声学建模以及语言模型建模任务上验证了所提出的FSMN模型。实验结果表明,FSMN不仅可以取得相比于当前最流行的循环神经网络更好的性能,而且训练更加高效。在此基础上,我们探索了 FSMN模型的改进,通过结合低秩矩阵分解的思路以及修改记忆模块的编码方式提出了一种结构简化的FSMN,命名为cFSMN。同时通过在cFSMN的记忆模块之间添加跳转连接,避免深层网络训练过程梯度消失的问题,实现了非常深层的cFSMN的训练。我们在Switchboard数据库以及Fisher数据库进行的声学建模实验验证了所提出的模型的性能。Fisher数据库的实验结果表明基于深层的cFSMN的识别系统相比于主流的基于BLSTM的识别系统可以获得13.8%的相对词错误率下降。最后,本文提出一种用于高维数据建模的新模型,称之为联合优化正交投影和估计(Hybrid Orthogonal Projection and Estimation,HOPE)模型。HOPE 将线性正交投影和混合模型融合为一个生成模型。HOpe模型本身可以从无标注的数据中通过无监督最大似然估计方法进行无监督学习,同时也可以采用带标注的数据进行有监督学习。更为有趣的是,我们的研究阐述了 HOPE模型和神经网络之间的密切关系。HOPE可以作为一个新的工具用于探究深度学习的黑盒子,以及用于有监督和无监督深度神经网络的训练。我们在语音识别TIM1T数据库以及图像分类MNIST数据库验证了基于HOPE模型的无监督、半监督以及有监督学习。实验结果表明,基于HOPE框架训练的神经网络相比于现有的神经网络在无监督、半监督以及有监督学习任务上都获得显著的性能提升。
+%X 语音作为最自然、最有效的交流途径,一直是人机通信和交互领域最受关注的研究内容之一。自动语音识别的主要目的是让计算机能够"听懂"人类的语音.将语音波形信号转化成文本。它是实现智能的人机交互的关键技术之一。声学模型和语言模型是语音识别系统的两个核心模块。传统的语音识别系统普遍采用基于高斯混合模型和隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model,GMM-HMM)的声学模型以及 n-gram 语言模型。近年来,随着深度学习的兴起,基于深度神经网络的声学模型和语言模型相比于传统的 GMM-HMM 和 n-gram 模型分别都获得了显著的性能提升。在此背景下,本论文从深度神经网络的模型结构出发,展开了较为系统和深入的研究,一方面对现有的模型进行优化,另一方面结合语音及语言信号的特性探究新的网络结构模型,从而提高基于深度神经网络的语音识别系统的性能和训练效率。首先,本文研究了基于前馈全连接深度神经网络(Deep Neural Networks,DNN)的语音声学建模。我们分别探索了基于 sigmoid 非线性激活函数的 DNN(sigmoid-DNN)和基于整流线性单元(Rectified Linear Units,ReLU)的 DNN(RL-DNN)的大词汇量连续语音识别。首先针对传统的 sigmoid-DNN,我们通过研究发现其隐层权重越往高层稀疏性越强的特性,提出了一种隐层节点递减的 DNN 结构,命名为 sDNN。实验结果表明 sDNN 可以在保持性能基本不变的情况下将模型参数量减少到 45%,从而获得 2 倍的训练加速。进一步地我们提出将 dropout 预训练作为一种神经网络的初始化方法,可以获得相比于传统的无监督 Pre-training 更好的性能。然后我们针对 RL-DNN 的研究发现,通过合理的参数配置,可以采用基于大批量的随机梯度下降算法来训练 RL-DNN,从而能够利用多个图形处理单元(Graphic Processing Unit,GPU)进行并行化训练,可以获得超过 10 倍的训练加速。进一步地我们提出了一种绑定标量规整的方法用于优化 RL-DNN 的训练,不仅使得训练更加稳定,而且能够获得显著的性能提升。其次,本文提出一种固定长度依次遗忘编码(Fixed-size Ordinally Forgetting Encoding,FOFE)方法用于语言模型建模。FOFE 通过简单的顺序遗忘机制来对序列中的单词位置进行建模,可以将任何可变长度的单词序列唯一地编码成固定大小的表达。本研究中,我们提出基于 FOFE 的前馈神经网络语言模型(FOFE-FNNLM)。实验结果表明,在不使用任何反馈连接的情况下,基于 FOFE 的 FNNLM 显著的优于标准的基于 1-of-k 编码作为输入的 FNNLM,同时也优于基于循环神经网络(Recurrent Neural Networks,RNN)的语言模型。再次,本文提出了一种新颖的神经网络结构,命名为前馈序列记忆神经网络(Feedforward Sequential Memory Networks,FSMN)。FSMN 可以对时序信号中的长时相关性(long-term dependency)进行建模而不需要使用反馈连接。本研究所提出来的 FSMN 可以认为是在标准的前馈全连接神经网络的隐藏层中配备了一些可学习的记忆模块。这些记忆模块使用抽头延迟线结构将长时上下文信息编码成固定大小的表达作为一种短时记忆机制。我们在语音识别声学建模以及语言模型建模任务上验证了所提出的 FSMN 模型。实验结果表明,FSMN 不仅可以取得相比于当前最流行的循环神经网络更好的性能,而且训练更加高效。在此基础上,我们探索了 FSMN 模型的改进,通过结合低秩矩阵分解的思路以及修改记忆模块的编码方式提出了一种结构简化的 FSMN,命名为 cFSMN。同时通过在 cFSMN 的记忆模块之间添加跳转连接,避免深层网络训练过程梯度消失的问题,实现了非常深层的 cFSMN 的训练。我们在 Switchboard 数据库以及 Fisher 数据库进行的声学建模实验验证了所提出的模型的性能。Fisher 数据库的实验结果表明基于深层的 cFSMN 的识别系统相比于主流的基于 BLSTM 的识别系统可以获得 13.8%的相对词错误率下降。最后,本文提出一种用于高维数据建模的新模型,称之为联合优化正交投影和估计(Hybrid Orthogonal Projection and Estimation,HOPE)模型。HOPE 将线性正交投影和混合模型融合为一个生成模型。HOpe 模型本身可以从无标注的数据中通过无监督最大似然估计方法进行无监督学习,同时也可以采用带标注的数据进行有监督学习。更为有趣的是,我们的研究阐述了 HOPE 模型和神经网络之间的密切关系。HOPE 可以作为一个新的工具用于探究深度学习的黑盒子,以及用于有监督和无监督深度神经网络的训练。我们在语音识别 TIM1T 数据库以及图像分类 MNIST 数据库验证了基于 HOPE 模型的无监督、半监督以及有监督学习。实验结果表明,基于 HOPE 框架训练的神经网络相比于现有的神经网络在无监督、半监督以及有监督学习任务上都获得显著的性能提升。
 %W CNKI
-
 
 %0 Journal Article
 %A 吴福祥
@@ -473,7 +435,6 @@
 %L 11-3879/H
 %W CNKI
 
-
 %0 Journal Article
 %A 徐戈
 %A 王厚峰
@@ -483,13 +444,12 @@
 %D 2011
 %V 34
 %N 08
-%K 自然语言处理;;主题模型;;隐性语义索引;;LDA;;期望最大化算法;;Gibbs采样
-%X 主题模型在自然语言处理领域受到了越来越多的关注.在该领域中,主题可以看成是词项的概率分布.主题模型通过词项在文档级的共现信息抽取出语义相关的主题集合,并能够将词项空间中的文档变换到主题空间,得到文档在低维空间中的表达.作者从主题模型的起源隐性语义索引出发,对概率隐性语义索引以及LDA等在主题模型发展中的重要阶段性工作进行了介绍和分析,着重描述这些工作之间的关联性.LDA作为一个概率生成模型,很容易被扩展成其它形式的概率模型.作者对由LDA派生出的各种模型作了粗略分类,并选择了各类的代表性模型简单介绍.主题模型中最重要的两组参数分别是各主题下的词项概率分布和各文档的主题概率分布,作者对期望最大化算法在主题模型参数估计中的使用进行了分析,这有助于更深刻理解主题模型发展中各项工作的联系.
+%K 自然语言处理;;主题模型;;隐性语义索引;;LDA;;期望最大化算法;;Gibbs 采样
+%X 主题模型在自然语言处理领域受到了越来越多的关注.在该领域中,主题可以看成是词项的概率分布.主题模型通过词项在文档级的共现信息抽取出语义相关的主题集合,并能够将词项空间中的文档变换到主题空间,得到文档在低维空间中的表达.作者从主题模型的起源隐性语义索引出发,对概率隐性语义索引以及 LDA 等在主题模型发展中的重要阶段性工作进行了介绍和分析,着重描述这些工作之间的关联性.LDA 作为一个概率生成模型,很容易被扩展成其它形式的概率模型.作者对由 LDA 派生出的各种模型作了粗略分类,并选择了各类的代表性模型简单介绍.主题模型中最重要的两组参数分别是各主题下的词项概率分布和各文档的主题概率分布,作者对期望最大化算法在主题模型参数估计中的使用进行了分析,这有助于更深刻理解主题模型发展中各项工作的联系.
 %P 1423-1436
 %@ 0254-4164
 %L 11-1826/TP
 %W CNKI
-
 
 %0 Thesis
 %A 陈晓美
@@ -498,46 +458,45 @@
 %I 吉林大学
 %9 博士
 %D 2014
-%K 网络评论;;文本挖掘;;观点挖掘;;知识发现;;LDA主题模型
-%X 当今的中国，客观存在两个社会舆论场，一个是以报纸、广播电视等为主流媒体的社会舆论场，一个是以互联网和近几年来兴起的Web2.0应用为平台的民间舆论场。在新的Web2.0环境下，基于互联网的社会舆论平台除了原有的网站新闻评论、BBS等形式外，又涌现出了聚合新闻（RSS）、维基百科（Wiki）、QQ等即时通信工具（IM）、（微）博客、播客、淘宝与易趣综合的商务平台等新形式，使得网络当中的评论信息量得到了快速增长。目前我国网民规模已经进入发展平台期，手机成为新增网民的第一主力，微博、社区等微内容成为网络评论观点的主要来源，及时性、开放性、交互性、思想性、草根性成为网络评论信息的新特征，深深影响着人们生活的各个领域，改变了社会舆论生成演变与聚合的机制，拓展了社会舆论的传播空间。
+%K 网络评论;;文本挖掘;;观点挖掘;;知识发现;;LDA 主题模型
+%X 当今的中国，客观存在两个社会舆论场，一个是以报纸、广播电视等为主流媒体的社会舆论场，一个是以互联网和近几年来兴起的 Web2.0 应用为平台的民间舆论场。在新的 Web2.0 环境下，基于互联网的社会舆论平台除了原有的网站新闻评论、BBS 等形式外，又涌现出了聚合新闻（RSS）、维基百科（Wiki）、QQ 等即时通信工具（IM）、（微）博客、播客、淘宝与易趣综合的商务平台等新形式，使得网络当中的评论信息量得到了快速增长。目前我国网民规模已经进入发展平台期，手机成为新增网民的第一主力，微博、社区等微内容成为网络评论观点的主要来源，及时性、开放性、交互性、思想性、草根性成为网络评论信息的新特征，深深影响着人们生活的各个领域，改变了社会舆论生成演变与聚合的机制，拓展了社会舆论的传播空间。
+
+    在Web2.0环境下，人们普遍感到，获得观点已经与获取信息同等重要，但要想从中获得体现价值的观点信息却变得越来越困难。究其原因在于：一是由于发表评论的人角度或目的不同，评论观点经常是正面和负面意见相混合，从中准确获取评论信息将花费很多时间和精力；二是由于以Web2.0应用为平台的民间舆论场的信息源受到较大的污染，网络评论中的这些主观信息五花八门、纷繁芜杂，良莠不齐，而以往采用的传统网络社会舆论分析技术手段（主要对象是网页和论坛）对动态性更强、结构更复杂的Web2.0网络应用处理能力有限，无法获取这些深层社会舆论信息要素，也无法甄对信息真伪，影响了网络评论信息分析效果。鉴于此，开展对于Web2.0的网络评论信息的分析研究，有助于我们更好地发掘蕴含在网络评论背后的观点信息，为决策和对未来的预测提供更加深层和丰富的信息支持，同时在理论上丰富网络评论信息分析的理论体系。
 
 
-	在Web2.0环境下，人们普遍感到，获得观点已经与获取信息同等重要，但要想从中获得体现价值的观点信息却变得越来越困难。究其原因在于：一是由于发表评论的人角度或目的不同，评论观点经常是正面和负面意见相混合，从中准确获取评论信息将花费很多时间和精力；二是由于以Web2.0应用为平台的民间舆论场的信息源受到较大的污染，网络评论中的这些主观信息五花八门、纷繁芜杂，良莠不齐，而以往采用的传统网络社会舆论分析技术手段（主要对象是网页和论坛）对动态性更强、结构更复杂的Web2.0网络应用处理能力有限，无法获取这些深层社会舆论信息要素，也无法甄对信息真伪，影响了网络评论信息分析效果。鉴于此，开展对于Web2.0的网络评论信息的分析研究，有助于我们更好地发掘蕴含在网络评论背后的观点信息，为决策和对未来的预测提供更加深层和丰富的信息支持，同时在理论上丰富网络评论信息分析的理论体系。
+    本论文以Web2.0应用为平台的民间舆论场的信息源为逻辑起点，综合运用文本挖掘、观点挖掘、知识发现、LDA主题模型、本体学习等理论和方法，从主题聚类视角对网络评论信息分析模式、观点挖掘的理论、技术、方法及其应用等问题进行了较深入系统的研究。
 
 
-	本论文以Web2.0应用为平台的民间舆论场的信息源为逻辑起点，综合运用文本挖掘、观点挖掘、知识发现、LDA主题模型、本体学习等理论和方法，从主题聚类视角对网络评论信息分析模式、观点挖掘的理论、技术、方法及其应用等问题进行了较深入系统的研究。
+    论文所做的主要研究工作如下：
 
 
-	论文所做的主要研究工作如下：
+    （1）对选题相关的国内外研究现状、热点与前沿、应用进展进行了较全面系统的分析与综述。梳理、分析了网络评论观点知识发现的相关理论与方法，为本研究工作的展开奠定了坚实的理论与方法基础。
 
 
-	（1）对选题相关的国内外研究现状、热点与前沿、应用进展进行了较全面系统的分析与综述。梳理、分析了网络评论观点知识发现的相关理论与方法，为本研究工作的展开奠定了坚实的理论与方法基础。
+    （2）以显式观点的特征－情感关联关系发现方式作为非结构化评论文本的观点挖掘基础，利用网站提供的半结构化的显式观点提取评论对象的特征、情感极性和二者搭配关系，构建观点知识库，在一定程度上解决情感词语境敏感问题，将观点知识库作为非结构化评论文本的观点挖掘基础，辅助完整的挖掘工作。
 
 
-	（2）以显式观点的特征－情感关联关系发现方式作为非结构化评论文本的观点挖掘基础，利用网站提供的半结构化的显式观点提取评论对象的特征、情感极性和二者搭配关系，构建观点知识库，在一定程度上解决情感词语境敏感问题，将观点知识库作为非结构化评论文本的观点挖掘基础，辅助完整的挖掘工作。
+    （3）提出基于LDA（Latent DirichletAllocation，潜在狄利克雷分配）主题聚类的网络评论知识发现的主要任务和解决方法，包括相似评论文本聚类、评论主要观点抽取、深度观点判定等方法。
 
 
-	（3）提出基于LDA（Latent DirichletAllocation，潜在狄利克雷分配）主题聚类的网络评论知识发现的主要任务和解决方法，包括相似评论文本聚类、评论主要观点抽取、深度观点判定等方法。
+    （4）从认知视角，分析探讨了面向隐性认知的网络评论知识发现规律，在此基础上以领域知识为核心，将基于观点词的一般挖掘与基于主题的深度挖掘相融合，构建了多库融合的网络评论观点知识发现模式。
 
 
-	（4）从认知视角，分析探讨了面向隐性认知的网络评论知识发现规律，在此基础上以领域知识为核心，将基于观点词的一般挖掘与基于主题的深度挖掘相融合，构建了多库融合的网络评论观点知识发现模式。
+    （5）以教育领域网络评论观点挖掘为例进行了实证研究，为其应用研究提供了有价值的参考。
 
 
-	（5）以教育领域网络评论观点挖掘为例进行了实证研究，为其应用研究提供了有价值的参考。
+    论文取得的创新研究成果包括以下三个方面：
 
 
-	论文取得的创新研究成果包括以下三个方面：
+    （1）构建了基于本体的观点知识库，并提出了基于观点本体知识库的观点挖掘模式，有助于解决隐式观点识别和语境敏感问题，并可辅助提高领域词典的动态扩展性。
 
 
-	（1）构建了基于本体的观点知识库，并提出了基于观点本体知识库的观点挖掘模式，有助于解决隐式观点识别和语境敏感问题，并可辅助提高领域词典的动态扩展性。
+    （2）基于主题聚类视角，运用LDA主题模型，结合观点分离与观点摘要集成算法，提出了网络评论主要观点识别、深度观点发现等方法。
 
 
-	（2）基于主题聚类视角，运用LDA主题模型，结合观点分离与观点摘要集成算法，提出了网络评论主要观点识别、深度观点发现等方法。
+    （3）将基于观点词的一般挖掘与基于主题的深度挖掘相融合，通过领域知识进行互补，构建了观点-领域知识-主题多库融合的网络评论观点知识发现模式。
 
-
-	（3）将基于观点词的一般挖掘与基于主题的深度挖掘相融合，通过领域知识进行互补，构建了观点-领域知识-主题多库融合的网络评论观点知识发现模式。
 %W CNKI
-
 
 %0 Thesis
 %A 杨南
@@ -549,22 +508,21 @@
 %K 统计机器翻译;;人工神经网络;;深度学习
 %X 近年来,统计机器翻译(Statistical Machine Translation, SMT)研究蓬勃发展,机器翻译效果有了很大改善。然而,机器翻译研究也遇到了双语数据不足、缺乏有效特征表示等困难,影响词对齐、调序、翻译建模等机器翻译关键模块的进一步提升,机器翻译的效果仍不尽人意。与此同时,深度学习作为一种新的机器学习方法,能自动的学习抽象特征表示,建立输入与输出信号间复杂的映射关系,给统计机器翻译研究提供了新的思路。
 
-
-	本博士论文的工作就是探索如何使用深度神经网络,对统计机器翻译中的关键问题学习能更好描述翻译现象的表示,提高统计机器翻译的性能。具体的说,本论文的主要工作和创新成果如下：
-
-
-	·提出了一种基于深层神经网络的词对齐方法。我们的模型将一个多层神经网络和一个无向概率图模型结合,有效的利用了词汇的相似性和上下文信息对词对齐进行了更准确的建模。我们考察在单语数据和双语平行语料上进行半监督和无监督训练的方法。大规模的中文到英文词对齐实验表明,本章提出的模型相较基准系统显著的改善了词对齐的效果。
+    本博士论文的工作就是探索如何使用深度神经网络,对统计机器翻译中的关键问题学习能更好描述翻译现象的表示,提高统计机器翻译的性能。具体的说,本论文的主要工作和创新成果如下：
 
 
-	·提出了一种基于神经网络的统计机器翻译预调序模型。本方法利用神经网络降维方法,从未标注数据学习任意调序特征的低维向量表示,然后利用一个多层神经网络,将低维特征表示和其他特征结合起来,融入到一个线性排序的调序模型中。中文到英文以及日文到英文的机器翻译实验结果表明,相比于基准系统,本文提出的基于神经网络的预调序模型上能显著提高机器翻译系统性能。
+    ·提出了一种基于深层神经网络的词对齐方法。我们的模型将一个多层神经网络和一个无向概率图模型结合,有效的利用了词汇的相似性和上下文信息对词对齐进行了更准确的建模。我们考察在单语数据和双语平行语料上进行半监督和无监督训练的方法。大规模的中文到英文词对齐实验表明,本章提出的模型相较基准系统显著的改善了词对齐的效果。
 
 
-	·提出了一种新的递归重现神经网络对翻译解码过程建模。递归重现神经网络结合递归神经网络和重现神经网络,不仅能使用全局特征对翻译对应关系进行刻画,还在翻译解码过程中动态的对翻译解码树动态生成抽象表示。我们将此模型运用到机器翻译解码过程中,并提出一种分三步的半监督训练方法对此模型进行训练。此外,我们还探索了翻译短语对的表示方法,提出了一种基于翻译置信度的短语对表示。中文到英文的翻译评测实验表明,该方法能使翻译性能获得明显提升。
+    ·提出了一种基于神经网络的统计机器翻译预调序模型。本方法利用神经网络降维方法,从未标注数据学习任意调序特征的低维向量表示,然后利用一个多层神经网络,将低维特征表示和其他特征结合起来,融入到一个线性排序的调序模型中。中文到英文以及日文到英文的机器翻译实验结果表明,相比于基准系统,本文提出的基于神经网络的预调序模型上能显著提高机器翻译系统性能。
 
 
-	本博士论文探讨了使用神经网络学习方法改善统计机器翻译中三个主要方面的性能。针对每个具体问题,我们设计了专门的神经网络结构,对相关特征学习了特定的抽象特征表示。在将来的研究中,我们希望对这些抽象表示进行总结,利用神经网络和统计机器翻译技术探索一种普适的语言表示,用以帮助其他的自然语言处理任务。
+    ·提出了一种新的递归重现神经网络对翻译解码过程建模。递归重现神经网络结合递归神经网络和重现神经网络,不仅能使用全局特征对翻译对应关系进行刻画,还在翻译解码过程中动态的对翻译解码树动态生成抽象表示。我们将此模型运用到机器翻译解码过程中,并提出一种分三步的半监督训练方法对此模型进行训练。此外,我们还探索了翻译短语对的表示方法,提出了一种基于翻译置信度的短语对表示。中文到英文的翻译评测实验表明,该方法能使翻译性能获得明显提升。
+
+
+    本博士论文探讨了使用神经网络学习方法改善统计机器翻译中三个主要方面的性能。针对每个具体问题,我们设计了专门的神经网络结构,对相关特征学习了特定的抽象特征表示。在将来的研究中,我们希望对这些抽象表示进行总结,利用神经网络和统计机器翻译技术探索一种普适的语言表示,用以帮助其他的自然语言处理任务。
+
 %W CNKI
-
 
 %0 Thesis
 %A 周盼
@@ -574,15 +532,15 @@
 %9 博士
 %D 2014
 %K 语音识别;;多深层神经网络;;竞争信息;;信息融合;;并行训练;;序列级训练
-%X 语音识别的终极目标是使人与机器之间能够像人与人之间一样自如的交流。声学模型性能的好坏直接影响到整个语音识别系统的准确性。过去几十年,高斯混合模型-隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model, GMM-HMM)在语音识别声学建模方法中一直起着主导作用。GMM-HMM框架由于具备较完善的理论体系,包括区分性训练、自适应等成熟的配套算法,以及HTK等开源工具,而受到众多研究者的追捧。近年来,深度学习(Deep Learning)理论在机器学习领域兴起,其对语音识别方向也产生了深远影响。基于深度神经网络-隐马尔科夫模型(Deep Neural Network-Hidden Markov Model, DNN-HMM)的声学模型混合建模方案迅速取代传统的GMM-HMM框架,成为当前主流语音识别系统的标配,基于DNN-HMM新框架的相关算法研究也受到语音识别领域的广泛关注。在这样的背景下,本论文围绕深度神经网络声学建模及其在自动语音识别中的应用,进行了较系统而深入的研究。
+%X 语音识别的终极目标是使人与机器之间能够像人与人之间一样自如的交流。声学模型性能的好坏直接影响到整个语音识别系统的准确性。过去几十年,高斯混合模型-隐马尔科夫模型(Gaussian Mixture Model-Hidden Markov Model, GMM-HMM)在语音识别声学建模方法中一直起着主导作用。GMM-HMM 框架由于具备较完善的理论体系,包括区分性训练、自适应等成熟的配套算法,以及 HTK 等开源工具,而受到众多研究者的追捧。近年来,深度学习(Deep Learning)理论在机器学习领域兴起,其对语音识别方向也产生了深远影响。基于深度神经网络-隐马尔科夫模型(Deep Neural Network-Hidden Markov Model, DNN-HMM)的声学模型混合建模方案迅速取代传统的 GMM-HMM 框架,成为当前主流语音识别系统的标配,基于 DNN-HMM 新框架的相关算法研究也受到语音识别领域的广泛关注。在这样的背景下,本论文围绕深度神经网络声学建模及其在自动语音识别中的应用,进行了较系统而深入的研究。
 
-	首先,为了提升基于神经网络的声学建模的能力,本文分别从特征域和模型域两个方面进行了探索。在特征域,本文借鉴传统TANDEM的方法将神经网络看成一种提取后验概率特征的预处理器,并基于所提取的区分性特征进行GMM-HMM建模。本论文提出了一种基于竞争信息的TANDEM系统改进方法。具体来说,我们首先基于解码过程中所生成的词图挑选训练样本的竞争信息,并基于该竞争样本训练相应的“竞争信息”神经网络,以对传统的只基于正例进行神经网络训练的TANDEM算法起到增强作用。接着,在直接使用神经网络作为声学分类器的模型域方面,本文针对中文语音识别系统中的多流声学特征,提出了一种中间层融合建模方案,该方案充分利用深度神经网络结构和学习算法的特点,在深度神经网络的中间某隐层进行多个特征流的中间层特征融合,并在融合特征的基础上继续学习更高层的特征表示。该算法在深度神经网络的框架下有效的利用了多流特征的互补特性,提升了识别系统的性能。
+    首先,为了提升基于神经网络的声学建模的能力,本文分别从特征域和模型域两个方面进行了探索。在特征域,本文借鉴传统TANDEM的方法将神经网络看成一种提取后验概率特征的预处理器,并基于所提取的区分性特征进行GMM-HMM建模。本论文提出了一种基于竞争信息的TANDEM系统改进方法。具体来说,我们首先基于解码过程中所生成的词图挑选训练样本的竞争信息,并基于该竞争样本训练相应的“竞争信息”神经网络,以对传统的只基于正例进行神经网络训练的TANDEM算法起到增强作用。接着,在直接使用神经网络作为声学分类器的模型域方面,本文针对中文语音识别系统中的多流声学特征,提出了一种中间层融合建模方案,该方案充分利用深度神经网络结构和学习算法的特点,在深度神经网络的中间某隐层进行多个特征流的中间层特征融合,并在融合特征的基础上继续学习更高层的特征表示。该算法在深度神经网络的框架下有效的利用了多流特征的互补特性,提升了识别系统的性能。
 
-	然后,本文在深层神经网络声学建模效率方面进行了深入的研究,以解决大规模语音数据声学建模的可应用性问题。面向真实语音识别系统的海量训练数据、深层神经网络的超大规模模型参数、以及模型结构导致的传统训练算法不可并行性,使得训练效率问题成为深层神经网络声学建模实用化的最大瓶颈。针对这样的情况,我们分析了深层神经网络的学习算法,找到影响其效率的主因,并针对这些原因提出了一种新颖的多深层神经网络联合建模方案。通过将数据进行聚类,我们可以分开独立的并行训练多个深层神经网络来对各个聚类数据分别进行建模。这种建模方法在交叉熵准则下,相对普通单个深层神经网络建模方法效率的提升是非常明显,在实际的研究应用中具有重要意义。
+    然后,本文在深层神经网络声学建模效率方面进行了深入的研究,以解决大规模语音数据声学建模的可应用性问题。面向真实语音识别系统的海量训练数据、深层神经网络的超大规模模型参数、以及模型结构导致的传统训练算法不可并行性,使得训练效率问题成为深层神经网络声学建模实用化的最大瓶颈。针对这样的情况,我们分析了深层神经网络的学习算法,找到影响其效率的主因,并针对这些原因提出了一种新颖的多深层神经网络联合建模方案。通过将数据进行聚类,我们可以分开独立的并行训练多个深层神经网络来对各个聚类数据分别进行建模。这种建模方法在交叉熵准则下,相对普通单个深层神经网络建模方法效率的提升是非常明显,在实际的研究应用中具有重要意义。
 
-	最后,针对我们提出的多深层神经网络联合建模方案,我们进行了进一步的完善。为了验证这一建模框架的切实可行性,同时解决其性能损失问题,我们在序列级区分性准则下进行了研究。序列级区分性准则可以看作是多DNN的一种联合优化策略,我们根据多DNN结构特点,推导出了此框架下的基于最大互信息量的区分性训练方法,并实现了部分并行化。实验表明,在经过联合优化后,多DNN方法与单个DNN方法达到几乎一样的性能,同时在交叉熵准则与最大互信息量准则下分别有超过7倍和1.5倍的训练效率提升,表明了多DNN声学建模方法是一种实际有效的建模方案。
+    最后,针对我们提出的多深层神经网络联合建模方案,我们进行了进一步的完善。为了验证这一建模框架的切实可行性,同时解决其性能损失问题,我们在序列级区分性准则下进行了研究。序列级区分性准则可以看作是多DNN的一种联合优化策略,我们根据多DNN结构特点,推导出了此框架下的基于最大互信息量的区分性训练方法,并实现了部分并行化。实验表明,在经过联合优化后,多DNN方法与单个DNN方法达到几乎一样的性能,同时在交叉熵准则与最大互信息量准则下分别有超过7倍和1.5倍的训练效率提升,表明了多DNN声学建模方法是一种实际有效的建模方案。
+
 %W CNKI
-
 
 %0 Thesis
 %A 蒋兵
@@ -594,17 +552,17 @@
 %K 语种识别;;全差异建模;;深度瓶颈特征;;深度学习;;最大互信息;;特征学习;;深度神经网络;;循环神经网络
 %X 语种识别(Language Identification, LID)是指自动判定给定语音段语言种类的过程。伴随着国际化趋势的日益深入,语种识别技术在多语言语音处理系统中的作用也越来越重要,业已成为多语言智能语音技术的不可或缺的关键组成部分之一。经过近五十余年的发展,对语种识别的研究取得了长足的进步,在某些特定任务下长时语音段的语种识别性能甚至超过了人工识别的结果。然而,现有语种识别系统的性能仍然不能满足日益增长的需求,尤其是面对短时语音段语种识别以及高混淆度的语言识别任务时。这主要是由于语言信息属于语音信号中的弱信息,隐藏在语音信号中,需要通过对语音中的信息进行提取和分析才能进行判定。判决结果的好坏强烈地依赖于语音信息段中的相关统计信息,而在短时语音段和高混淆语言任务中,现有方法对这些统计信息的估计缺乏鲁棒性。面对上述挑战,如何提取更适用于语种识别的特征以及提升模型的非线性分类能力是当前的研究重点。
 
-	近年来,深度学习(Deep Learning)理论在诸多机器学习领域都取得了成功的应用,引起了学界和产业界的广泛关注。由于其模型具有深度非线性结构特性,深度学习模型具有较强的深层信息抽取和非线性建模能力。本文主要围绕深度学习在语种识别中的应用,从特征提取和模型构建两方面展开研究,主要包括以下内容：
+    近年来,深度学习(Deep Learning)理论在诸多机器学习领域都取得了成功的应用,引起了学界和产业界的广泛关注。由于其模型具有深度非线性结构特性,深度学习模型具有较强的深层信息抽取和非线性建模能力。本文主要围绕深度学习在语种识别中的应用,从特征提取和模型构建两方面展开研究,主要包括以下内容：
 
-	首先,本文提出了基于深层神经网络(Deep Neural Network, DNN)提取音素相关深瓶颈特征(Deep Bottleneck Feature, DBF)的语种识别方法。该特征通过训练一个音素状态相关的带有瓶颈层的深度神经网络,然后将底层声学特征通过神经网络,在深瓶颈层得到输出即为相应的DBF特征。该DBF特征能够有效的抑制底层声学特征中的语种无关噪声,特别是信道差异、说话人差异、背景噪声差异等噪声因素,并且能够将底层声学特征与具有物理意义的底层声学单元对应起来。实验结果表明,利用DBF特征结合全差异建模(Total Variability, TV)的语种识别方法DBF-TV,能够有效的提升语种识别的性能,特别是极大的改善了易混语种和方言、短时语音的语种识别性能。鉴于DBF特征的提取是基于特定语种的音素状态DNN网络而实现,本文还提出了基于不同语言音素状态任务的DNN提取不同语种相关DBF的并行语种识别方法,该方法能够融合语音信号在不同声学单元集合下呈现的语种差异,进一步提升语种识别的性能。
+    首先,本文提出了基于深层神经网络(Deep Neural Network, DNN)提取音素相关深瓶颈特征(Deep Bottleneck Feature, DBF)的语种识别方法。该特征通过训练一个音素状态相关的带有瓶颈层的深度神经网络,然后将底层声学特征通过神经网络,在深瓶颈层得到输出即为相应的DBF特征。该DBF特征能够有效的抑制底层声学特征中的语种无关噪声,特别是信道差异、说话人差异、背景噪声差异等噪声因素,并且能够将底层声学特征与具有物理意义的底层声学单元对应起来。实验结果表明,利用DBF特征结合全差异建模(Total Variability, TV)的语种识别方法DBF-TV,能够有效的提升语种识别的性能,特别是极大的改善了易混语种和方言、短时语音的语种识别性能。鉴于DBF特征的提取是基于特定语种的音素状态DNN网络而实现,本文还提出了基于不同语言音素状态任务的DNN提取不同语种相关DBF的并行语种识别方法,该方法能够融合语音信号在不同声学单元集合下呈现的语种差异,进一步提升语种识别的性能。
 
-	其次,在DBF特征的基础上,本文提出了融合语种信息的区分性DBF特征(Discriminative DBF, D2BF)学习方法。该方法将基于音素的深度瓶颈提取网络作为初值,通过区分性的最大互信息准则(Maximum Mutual Information, MMI)结合高斯混合模型(Gaussian Mixture Model, GMM)将语种分类任务直接与DBF特征的提取过程建立联系,利用梯度下降法对网络参数进行调整,从而实现语种任务相关的特征学习过程。实验表明,较DBF特征而言,基于该方法提取的D2BF特征更加适用于语种识别任务,特别是在后端类差异补偿模型不容易实现的情景下,该特征能够有效的提升系统的性能。
+    其次,在DBF特征的基础上,本文提出了融合语种信息的区分性DBF特征(Discriminative DBF, D2BF)学习方法。该方法将基于音素的深度瓶颈提取网络作为初值,通过区分性的最大互信息准则(Maximum Mutual Information, MMI)结合高斯混合模型(Gaussian Mixture Model, GMM)将语种分类任务直接与DBF特征的提取过程建立联系,利用梯度下降法对网络参数进行调整,从而实现语种任务相关的特征学习过程。实验表明,较DBF特征而言,基于该方法提取的D2BF特征更加适用于语种识别任务,特别是在后端类差异补偿模型不容易实现的情景下,该特征能够有效的提升系统的性能。
 
-	再次,在模型域层面,本文提出了基于DNN的DBF-TV模型的改进方法。该方法在对混合高斯模型进行参数估计时,利用DNN的区分性分类能力,将语种识别的数据按照音素状态进行聚类从而得到GMM模型估计时的相关统计量。在该模型中,每个高斯成分直接对应于某一个音素状态。实验表明,基于区分性GMM模型的DBF-TV系统能够进一步提升系统的性能。
+    再次,在模型域层面,本文提出了基于DNN的DBF-TV模型的改进方法。该方法在对混合高斯模型进行参数估计时,利用DNN的区分性分类能力,将语种识别的数据按照音素状态进行聚类从而得到GMM模型估计时的相关统计量。在该模型中,每个高斯成分直接对应于某一个音素状态。实验表明,基于区分性GMM模型的DBF-TV系统能够进一步提升系统的性能。
 
-	最后,本文对利用深度学习模型直接进行语种识别建模进行了一定的探索。由于语种信息的隐藏特性,对语音段的整体分析才能反应出语种特性,因此逐帧构建深度学习模型时容易损失掉语音信号的时序关系。本文主要比较了基于前馈方式的深度神经网络(DNN)结构和基于隐层循环的循环神经网络(Recurrent Neural Network, RNN)结构。实验表明,较前馈神经网络而言,利用RNN对语音信号的时序结构进行建模方法在语种识别领域中有着显著的优势。
+    最后,本文对利用深度学习模型直接进行语种识别建模进行了一定的探索。由于语种信息的隐藏特性,对语音段的整体分析才能反应出语种特性,因此逐帧构建深度学习模型时容易损失掉语音信号的时序关系。本文主要比较了基于前馈方式的深度神经网络(DNN)结构和基于隐层循环的循环神经网络(Recurrent Neural Network, RNN)结构。实验表明,较前馈神经网络而言,利用RNN对语音信号的时序结构进行建模方法在语种识别领域中有着显著的优势。
+
 %W CNKI
-
 
 %0 Thesis
 %A 周昭涛
@@ -614,7 +572,9 @@
 %9 硕士
 %D 2005
 %K 文本聚类;聚类分析;聚类评价;文本表示
-%X 
+%X
+
+    随着计算机技术的不断发展与应用,数字化的文本数据数量不断增长,互联网的发展更加剧了数字文本的膨胀。在这种背景下,利用聚类分析技术对文本数据进行简化表示,通过聚类分析技术对信息检索结果进行重新组织、加速信息检索速度、实现信息的个性化推送都是一系列极具发展前景的应用。在与文本聚类分析相关的研究中,可用的算法种类众多且难以选择与比较,因此对文本的聚类结果进行有效评价非常关键。目前,评价方法比较混乱,缺乏得到普遍认同的评价方法及与之相关的深入研究。这导致在实际应用中选择算法、选择参数时缺乏一个科学的依据。在研究与实际应用中,评价文本聚类分析效果有哪些指标,各有什么特性,不同的文本聚类分析算法效果哪个好哪个不好,哪个更好,怎样才能更好,这些都是需要研究人员进行回答的问题。
 
 
 
@@ -624,7 +584,7 @@
 
 
 
-	随着计算机技术的不断发展与应用,数字化的文本数据数量不断增长,互联网的发展更加剧了数字文本的膨胀。在这种背景下,利用聚类分析技术对文本数据进行简化表示,通过聚类分析技术对信息检索结果进行重新组织、加速信息检索速度、实现信息的个性化推送都是一系列极具发展前景的应用。在与文本聚类分析相关的研究中,可用的算法种类众多且难以选择与比较,因此对文本的聚类结果进行有效评价非常关键。目前,评价方法比较混乱,缺乏得到普遍认同的评价方法及与之相关的深入研究。这导致在实际应用中选择算法、选择参数时缺乏一个科学的依据。在研究与实际应用中,评价文本聚类分析效果有哪些指标,各有什么特性,不同的文本聚类分析算法效果哪个好哪个不好,哪个更好,怎样才能更好,这些都是需要研究人员进行回答的问题。
+    这些问题归结到底都是一个文本聚类效果的评价问题。本文围绕文本聚类效果评价、提高文本聚类分析效果这个目的,主要完成了文本聚类分析评价以及文本表示模型研究两个方面的工作,论文的具体工作内容包括:
 
 
 
@@ -634,7 +594,7 @@
 
 
 
-	这些问题归结到底都是一个文本聚类效果的评价问题。本文围绕文本聚类效果评价、提高文本聚类分析效果这个目的,主要完成了文本聚类分析评价以及文本表示模型研究两个方面的工作,论文的具体工作内容包括:
+    (1)影响文本聚类效果的因素分析。详细分析了可能影响文本聚类分析效果的三个因素:文本表示模型、距离度量方法和聚类分析算法;
 
 
 
@@ -644,7 +604,7 @@
 
 
 
-	(1)影响文本聚类效果的因素分析。详细分析了可能影响文本聚类分析效果的三个因素:文本表示模型、距离度量方法和聚类分析算法;
+    (2)详细介绍了两类评价标准下对应的具体评价指标,清晰界定了基于人工判定的指标和基于目标函数的指标两大类别,分清各自的应用场景,着重介绍基于人工判定的系列指标以及其特性,推荐使用熵和基于类的F值两个指标;
 
 
 
@@ -654,7 +614,7 @@
 
 
 
-	(2)详细介绍了两类评价标准下对应的具体评价指标,清晰界定了基于人工判定的指标和基于目标函数的指标两大类别,分清各自的应用场景,着重介绍基于人工判定的系列指标以及其特性,推荐使用熵和基于类的F值两个指标;
+    (3)实现了包括文本解析、文本聚类分析、文本聚类效果评价分析三个模块的实用软件包,软件包实现了多种文本解析方法、聚类分析算法及评价指标,三个模块可各自独立使用,可扩展性强;
 
 
 
@@ -664,7 +624,7 @@
 
 
 
-	(3)实现了包括文本解析、文本聚类分析、文本聚类效果评价分析三个模块的实用软件包,软件包实现了多种文本解析方法、聚类分析算法及评价指标,三个模块可各自独立使用,可扩展性强;
+    (4)应用软件包进行实验分析。主要分析HAC算法中大类现象的出现位置、原因和启示,对HAC与K-Means算法进行效能分析、对多种影响因素的影响力进行比较分析,对主要聚类算法效果进行横向比较。主要结论包括:a)文本HAC算法的聚类效果是一个先变好后变坏的过程,算法先按照文本语义逐渐凝聚簇直至临界点,临界点后出现大类倾向,质量开始变坏。文本表示与文本语义之间的不完全对应造成了这种现象,解决方案建议在临界点之前停止簇合并避免质量变差或者淘汰干扰簇等;b)英文文本处理中的Lower处理以及不进行Stem处理可以适当提高最终聚类效果的质量;c)VSM模型中的ltc特征权重度量方法相对于nnn、Lnu、OKAPI中的BM25等方法更优;d)在本文的实验中通过适当的阈值设置,NN算法可以产生高质量的小簇,从整体效果上而言K-Means基本优于HAC、K-Means Bisecting和NN聚类算法;
 
 
 
@@ -674,19 +634,9 @@
 
 
 
-	(4)应用软件包进行实验分析。主要分析HAC算法中大类现象的出现位置、原因和启示,对HAC与K-Means算法进行效能分析、对多种影响因素的影响力进行比较分析,对主要聚类算法效果进行横向比较。主要结论包括:a)文本HAC算法的聚类效果是一个先变好后变坏的过程,算法先按照文本语义逐渐凝聚簇直至临界点,临界点后出现大类倾向,质量开始变坏。文本表示与文本语义之间的不完全对应造成了这种现象,解决方案建议在临界点之前停止簇合并避免质量变差或者淘汰干扰簇等;b)英文文本处理中的Lower处理以及不进行Stem处理可以适当提高最终聚类效果的质量;c)VSM模型中的ltc特征权重度量方法相对于nnn、Lnu、OKAPI中的BM25等方法更优;d)在本文的实验中通过适当的阈值设置,NN算法可以产生高质量的小簇,从整体效果上而言K-Means基本优于HAC、K-Means Bisecting和NN聚类算法;
+    (5)对文本表示进行探索性的研究。文本聚类归根结底是语义相同或者相近的同质
 
-
-
-
-
-
-
-
-
-	(5)对文本表示进行探索性的研究。文本聚类归根结底是语义相同或者相近的同质
 %W CNKI
-
 
 %0 Journal Article
 %A 刘群
@@ -703,24 +653,22 @@
 %L 11-3879/H
 %W CNKI
 
-
 %0 Journal Article
 %A 丁小东
 %A 姚志刚
 %A 程高
 %+ 长安大学经管学院;
-%T LINGO语言与0-1混合整数规划选址模型的再结合
+%T LINGO 语言与 0-1 混合整数规划选址模型的再结合
 %J 物流工程与管理
 %D 2009
 %V 31
 %N 10
-%K 配送中心选址;;0-1混合整数规划;;Lingo
-%X 目前现有的将LINGO语言和O-1整数规划模型结合解决物流配送中心选址的理论较多,但不完善,主要表现在建模时对费用的考虑不全面、编程时所使用的变量不统一和求解时使用的是算例,数据真实性不高。针对以上问题,论文对LINGO语言与0-1混合整数规划选址模型进行再结合。首先把与配送相关的物流活动分为进货、仓储和送货三大物流环节,由此将配送中心选址中所涉及到的费用分为进货运输费用、仓储费用和送货配送费用;其次对建模所涉及到变量进行科学的规范,并成功建立O-1整数规划模型;最后以邯郸交通运输集团物流配送中心选址为实例,运用所建立的0-1混合整数规划模型,编写相应的LINGO求解程序,通过运行得出邯运集团在石家庄、北京、邯郸建立配送中心此时费用最少,最终到达LINGO语言与0-1混合整数规划选址模型的完美结合。
+%K 配送中心选址;;0-1 混合整数规划;;Lingo
+%X 目前现有的将 LINGO 语言和 O-1 整数规划模型结合解决物流配送中心选址的理论较多,但不完善,主要表现在建模时对费用的考虑不全面、编程时所使用的变量不统一和求解时使用的是算例,数据真实性不高。针对以上问题,论文对 LINGO 语言与 0-1 混合整数规划选址模型进行再结合。首先把与配送相关的物流活动分为进货、仓储和送货三大物流环节,由此将配送中心选址中所涉及到的费用分为进货运输费用、仓储费用和送货配送费用;其次对建模所涉及到变量进行科学的规范,并成功建立 O-1 整数规划模型;最后以邯郸交通运输集团物流配送中心选址为实例,运用所建立的 0-1 混合整数规划模型,编写相应的 LINGO 求解程序,通过运行得出邯运集团在石家庄、北京、邯郸建立配送中心此时费用最少,最终到达 LINGO 语言与 0-1 混合整数规划选址模型的完美结合。
 %P 72-75
 %@ 1674-4993
 %L 42-1791/TS
 %W CNKI
-
 
 %0 Thesis
 %A 蒙小英
@@ -730,16 +678,7 @@
 %9 博士
 %D 2006
 %K 北欧;现代主义园林;设计语言
-%X 1920-1970年间，北欧园林成功地把现代主义本土化、本土景观要素现代化，生成了地域性与艺术品质兼具的现代主义景观，形成了现代园林设计传统，也为北欧人创造了理想生活的园林环境。我国有着与北欧相似的社会制度，对它成功发展的现代主义园林设计语言的研究，旨在启示我们创造景观与生活的结合、以及地域性与艺术品质相统一的园林的一体化创作。
-
-
-
-
-
-
-
-
-
+%X 1920-1970 年间，北欧园林成功地把现代主义本土化、本土景观要素现代化，生成了地域性与艺术品质兼具的现代主义景观，形成了现代园林设计传统，也为北欧人创造了理想生活的园林环境。我国有着与北欧相似的社会制度，对它成功发展的现代主义园林设计语言的研究，旨在启示我们创造景观与生活的结合、以及地域性与艺术品质相统一的园林的一体化创作。
 
     论文从园林历史和设计的角度，研究北欧现代主义园林设计的发展和设计语言的量化与生成。论文内容主要包括四大部分：首先介绍了1920—70年间北欧各国有代表性的园林设计师的作品；其次是运用语言学的研究方法，对量化设计特征的设计语言模型的建构；再是利用建构的设计语言模型，量化北欧园林设计师和北欧园林的设计特征，并借鉴类型学的抽象方法，将其对应的词汇和句法描述提炼为图示的表达；最后是对北欧现代主义富有地域性与艺术品质特征的设计语言生成基础和原因的解析。
 
@@ -786,8 +725,8 @@
 
 
     3．农业景观、自然景观和设计的传统，工艺美术运动和功能主义，是影响北欧现代主义园林设计语言生成的最重要的内因和外因。
-%W CNKI
 
+%W CNKI
 
 %0 Thesis
 %A 李勇
@@ -796,45 +735,40 @@
 %I 华南理工大学
 %9 博士
 %D 2005
-%K 复杂网络;汉字词组网络;AD HOC网络;小世界效应;无标度
-%X 
+%K 复杂网络;汉字词组网络;AD HOC 网络;小世界效应;无标度
+%X
+
+    本研究的主要动机是结合具体的复杂网络对象实例,系统研究复杂网络的理论和实践,并且研究复杂网络原理在Ad hoc计算机网络中的应用。选择了汉语词组网络作为实际复杂网络研究对象。提出了一种推广的耦合网络理论模型。
 
 
 
 
 
 
-	本研究的主要动机是结合具体的复杂网络对象实例,系统研究复杂网络的理论和实践,并且研究复杂网络原理在Ad hoc计算机网络中的应用。选择了汉语词组网络作为实际复杂网络研究对象。提出了一种推广的耦合网络理论模型。
+    由于耦合网络的普遍存在,在复杂网络基本理论方面首先研究了耦合网络的模型建立和扩展。基于Zheng等的耦合网络演化模型,根据对实际网络的分析,提出了一种扩展模型的方案。在耦合演化过程中增加考虑了网络旧节点之间的再生连接,通过速率方程的建立及严格求解,给出了网络中有关度分布函数的幂律渐近解,并求出相关的幂指数。通过模型参数的适当设定,所建立的扩展模型可以给出已有相关的实际网络结果,而且具有更广泛的适应性。
 
 
 
 
 
 
-	由于耦合网络的普遍存在,在复杂网络基本理论方面首先研究了耦合网络的模型建立和扩展。基于Zheng等的耦合网络演化模型,根据对实际网络的分析,提出了一种扩展模型的方案。在耦合演化过程中增加考虑了网络旧节点之间的再生连接,通过速率方程的建立及严格求解,给出了网络中有关度分布函数的幂律渐近解,并求出相关的幂指数。通过模型参数的适当设定,所建立的扩展模型可以给出已有相关的实际网络结果,而且具有更广泛的适应性。
+    随后选择了一个具体的复杂网络对象---汉语词组网络,对之进行了比较全面的研究。研究基于复杂网络基本理论和对三组实际词组数据的分析。建立了汉语词组的复杂网络视图,计算了汉语词组网络的网络结构参数和动态演化特性。得到了汉语词组网络具有3度分隔的小世界拓扑和具有幂律的度分布特性的重要结果。从Monkey语言模型(随机文本模型)出发,建立了对应于汉语词组网络的随机文本理论模型。揭示了直接用随机文本模型描述自然语言的缺陷和适应性以及对模型的调节途径。发现当改变Monkey模型的结构,减少其随机因素,比如考虑单字频度因素和词长的分布因素时,调节选字的集中性等,可以使模型能够更好地刻画和描述自然语言的行为。同时模型的分析也揭示出自然语言演化中的一些关键特征,比如最小代价原理的体现。研究对全部过程进行了模拟。并比较了汉语词组网络和其它少数几种语言的小世界特性,做出基本的分析,认为汉语词组网络属于和英语概念网络相同的无标度小世界网络类型。同时从几个角度初步探讨了研究汉语复杂网络的潜在实际应用意义。
 
 
 
 
 
 
-	随后选择了一个具体的复杂网络对象---汉语词组网络,对之进行了比较全面的研究。研究基于复杂网络基本理论和对三组实际词组数据的分析。建立了汉语词组的复杂网络视图,计算了汉语词组网络的网络结构参数和动态演化特性。得到了汉语词组网络具有3度分隔的小世界拓扑和具有幂律的度分布特性的重要结果。从Monkey语言模型(随机文本模型)出发,建立了对应于汉语词组网络的随机文本理论模型。揭示了直接用随机文本模型描述自然语言的缺陷和适应性以及对模型的调节途径。发现当改变Monkey模型的结构,减少其随机因素,比如考虑单字频度因素和词长的分布因素时,调节选字的集中性等,可以使模型能够更好地刻画和描述自然语言的行为。同时模型的分析也揭示出自然语言演化中的一些关键特征,比如最小代价原理的体现。研究对全部过程进行了模拟。并比较了汉语词组网络和其它少数几种语言的小世界特性,做出基本的分析,认为汉语词组网络属于和英语概念网络相同的无标度小世界网络类型。同时从几个角度初步探讨了研究汉语复杂网络的潜在实际应用意义。
+    复杂网络应用研究是一种较为全新的尝试,根据对MANET(Mobile Ad hoc NETwork)网络的体系结构与路由协议的分析研究基础,我们试图将复杂网络的基本理论和结论用于MANET网络层路由协议的改进和网络的拥塞控制。首先从体系结构的低层考虑了复杂网络理念在MANET的切入点,首次引入了广义的拓扑控制和复杂网络视图的概念。根据当前的研究,明确了复杂网络视图操作属于网络拓扑控制研究特别的一种,及其在网络体系结构中的位置。基于一种MANET的实际应用场景,提出了小世界网络及其视图的构建模型和方案,分析论证了其正确性,进行了相应的计算和拓扑模拟。MANET拓扑结构的复杂网络视图,突出了网络更多新的特性,能够为路由算法和拥塞控制算法设计时提供参照从而使之更有效。我们仔细研究了MANET的DSR(Dynamic Source Routing)路由协议,对其中路由发现和路由维护阶段进行了一般优化,随后根据所建立的实际网络模型,使用复杂网络视图信息对DSR的路由发现进行了进一步优化和改良。分析了根据实际所构建的小世界网络可能存在的拥塞问题,用复杂网络视图对问题进行了剖析,并提出了解决的方案,由此对DSR进行了相应的改变。除了理论上的定性正确性证明之外,上述全部协议改进和拥塞控制算法均使用ns-2网络仿真工具进行了数字仿真,网络性能指标的改进证实了我们工作的正确性和有效性。
 
 
 
 
 
 
-	复杂网络应用研究是一种较为全新的尝试,根据对MANET(Mobile Ad hoc NETwork)网络的体系结构与路由协议的分析研究基础,我们试图将复杂网络的基本理论和结论用于MANET网络层路由协议的改进和网络的拥塞控制。首先从体系结构的低层考虑了复杂网络理念在MANET的切入点,首次引入了广义的拓扑控制和复杂网络视图的概念。根据当前的研究,明确了复杂网络视图操作属于网络拓扑控制研究特别的一种,及其在网络体系结构中的位置。基于一种MANET的实际应用场景,提出了小世界网络及其视图的构建模型和方案,分析论证了其正确性,进行了相应的计算和拓扑模拟。MANET拓扑结构的复杂网络视图,突出了网络更多新的特性,能够为路由算法和拥塞控制算法设计时提供参照从而使之更有效。我们仔细研究了MANET的DSR(Dynamic Source Routing)路由协议,对其中路由发现和路由维护阶段进行了一般优化,随后根据所建立的实际网络模型,使用复杂网络视图信息对DSR的路由发现进行了进一步优化和改良。分析了根据实际所构建的小世界网络可能存在的拥塞问题,用复杂网络视图对问题进行了剖析,并提出了解决的方案,由此对DSR进行了相应的改变。除了理论上的定性正确性证明之外,上述全部协议改进和拥塞控制算法均使用ns-2网络仿真工具进行了数字仿真,网络性能指标的改进证实了我们工作的正确性和有效性。
+    本文的研究在汉字网络方面和复杂网络在MANET中应用方面,都是具有开拓性。研究工作进行的同时,也提出了许多更深入的问题,留待下一步的工作。
 
-
-
-
-
-
-	本文的研究在汉字网络方面和复杂网络在MANET中应用方面,都是具有开拓性。研究工作进行的同时,也提出了许多更深入的问题,留待下一步的工作。
 %W CNKI
-
 
 %0 Thesis
 %A 张志华
@@ -844,9 +778,8 @@
 %9 硕士
 %D 2016
 %K 情感分析;;词向量;;情感词向量;;深度学习;;卷积神经网络
-%X 情感分析识别给定文本或其中片段(如句子、短语或词)的情感极性(正、负或中性)或情感强度(强或弱)。情感分析应用在产品评论分析可以识别用户对产品的情感,为商家和其他用户提供决策支持。以往研究多采用人工抽取特征和机器学习算法相结合构建识别系统。然而,人工抽取特征需要专家的领域知识,系统适应性差,人力成本高。近年研究者开始使用深度学习的方法来自动抽取特征。深度学习在自然语言处理中最基础的一个研究成果是词向量,即词的分布式语义表达,并在许多传统自然语言处理中得到应用。但是传统词向量根据上下文学习获得,包含语义和语法信息,缺乏情感信息,不能很好的解决情感分析任务。为了将情感信息融入到词向量中,本文第一部分工作提出了两个情感词向量学习框架,即,基于谷歌提出的Skip-gram模型的框架和基于卷积神经网络模型的框架。在每个框架中,根据情感和语义信息融合策略的不同,我们又分别提出三个具体模型。为了验证学习得到的情感词向量是否包含语义和情感信息,本文分别在不同语言、不同领域的多个数据集下进行了大量定性和定量的比较实验。这部分相关工作分别发表在2015年IALP会议和2016年IJCNN会议。为了将词的情感语义表达扩展到长文本上,本文第二部分工作提出基于深度学习的卷积神经网络对长文本进行情感语义建模,解决长文本(句子)情感分类。这部分相关工作应用在SemEval(国际标准语义评测)2015年和2016年的推文情感分析中,相关论文发表在2015和2016年SemEval会议上。更进一步,为了预测情感强度,本文第三部分工作将情感词向量与传统人工特征结合,构建有监督的排序模型预测情感强度。在2016年SemEval竞赛的英文短语情感强度预测任务中,这部分工作获得了第一名的好成绩。本文在不同文本层面(词、短语以及句子),不同语言(中文和英文)和不同领域(推文和评论)中进行了大量定性和定量的实验。实验结果表明,本文提出的情感词向量能有效包含情感和语义信息,模型具有较好的泛化性。
+%X 情感分析识别给定文本或其中片段(如句子、短语或词)的情感极性(正、负或中性)或情感强度(强或弱)。情感分析应用在产品评论分析可以识别用户对产品的情感,为商家和其他用户提供决策支持。以往研究多采用人工抽取特征和机器学习算法相结合构建识别系统。然而,人工抽取特征需要专家的领域知识,系统适应性差,人力成本高。近年研究者开始使用深度学习的方法来自动抽取特征。深度学习在自然语言处理中最基础的一个研究成果是词向量,即词的分布式语义表达,并在许多传统自然语言处理中得到应用。但是传统词向量根据上下文学习获得,包含语义和语法信息,缺乏情感信息,不能很好的解决情感分析任务。为了将情感信息融入到词向量中,本文第一部分工作提出了两个情感词向量学习框架,即,基于谷歌提出的 Skip-gram 模型的框架和基于卷积神经网络模型的框架。在每个框架中,根据情感和语义信息融合策略的不同,我们又分别提出三个具体模型。为了验证学习得到的情感词向量是否包含语义和情感信息,本文分别在不同语言、不同领域的多个数据集下进行了大量定性和定量的比较实验。这部分相关工作分别发表在 2015 年 IALP 会议和 2016 年 IJCNN 会议。为了将词的情感语义表达扩展到长文本上,本文第二部分工作提出基于深度学习的卷积神经网络对长文本进行情感语义建模,解决长文本(句子)情感分类。这部分相关工作应用在 SemEval(国际标准语义评测)2015 年和 2016 年的推文情感分析中,相关论文发表在 2015 和 2016 年 SemEval 会议上。更进一步,为了预测情感强度,本文第三部分工作将情感词向量与传统人工特征结合,构建有监督的排序模型预测情感强度。在 2016 年 SemEval 竞赛的英文短语情感强度预测任务中,这部分工作获得了第一名的好成绩。本文在不同文本层面(词、短语以及句子),不同语言(中文和英文)和不同领域(推文和评论)中进行了大量定性和定量的实验。实验结果表明,本文提出的情感词向量能有效包含情感和语义信息,模型具有较好的泛化性。
 %W CNKI
-
 
 %0 Journal Article
 %A 禹琳琳
@@ -862,5 +795,3 @@
 %@ 1004-373X
 %L 61-1224/TN
 %W CNKI
-
-

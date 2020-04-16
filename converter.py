@@ -62,7 +62,12 @@ def adapter(adp_name):
         Args:
             p: (str)
         """
-        sp, ep = p.split('-')
+        try:
+            temp = p.split('-')
+            assert len(temp) == 2
+            sp, ep = p.split('-')
+        except AssertionError:
+            return p, p
         return sp, ep
 
     def to_entry(item):
@@ -109,20 +114,27 @@ def adapter(adp_name):
         }
         temp = {}
         for k, v in mapping.items():
-            value = item.get(k)
-            if value:
-                if k == '%P':
-                    temp['SP'], temp['EP'] = to_pages(value)
-                elif k == '%0':
-                    temp[v] = type_mapping[value.split(' ')[0]]
-                elif k == '%N':
-                    temp[v] = month_abbr[int(value)]
-                else:
-                    temp[v] = value
+            try:
+                value = item.get(k)
+                if value:
+                    if k == '%P':
+                        temp['SP'], temp['EP'] = to_pages(value)
+                    elif k == '%0':
+                        temp[v] = type_mapping[value.split(' ')[0]]
+                    elif k == '%N':
+                        temp[v] = month_abbr[int(value)]
+                    else:
+                        temp[v] = value
 
-                if temp['TY'] == 'THES':
-                    temp['PB'] = item.get('%I')
-                    temp['JO'] = item.get('%I')
+                    if temp['TY'] == 'THES':
+                        temp['PB'] = item.get('%I')
+                        temp['JO'] = item.get('%I')
+            except Exception as e:
+                print('Failed to extract meta from endnote record.')
+                print('endnote record: {}, current key: {}'.format(
+                    str(item), k
+                ))
+                print(str(e))
         temp['ER'] = ''
 
         return to_entry(temp)
@@ -147,7 +159,7 @@ def dump(orig_file_name, lines):
         fp = join(head, tail)
         if not exists(fp):
             break
-    with open(join(head, tail), 'w+', encoding='utf-8') as f:
+    with open(fp, 'w+', encoding='utf-8') as f:
         f.writelines(lines)
     return fp
 

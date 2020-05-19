@@ -62,7 +62,12 @@ def adapter(adp_name):
         Args:
             p: (str)
         """
-        sp, ep = p.split('-')
+        try:
+            temp = p.split('-')
+            assert len(temp) == 2
+            sp, ep = p.split('-')
+        except AssertionError:
+            return p, p
         return sp, ep
 
     def to_entry(item):
@@ -109,20 +114,27 @@ def adapter(adp_name):
         }
         temp = {}
         for k, v in mapping.items():
-            value = item.get(k)
-            if value:
-                if k == '%P':
-                    temp['SP'], temp['EP'] = to_pages(value)
-                elif k == '%0':
-                    temp[v] = type_mapping[value.split(' ')[0]]
-                elif k == '%N':
-                    temp[v] = month_abbr[int(value)]
-                else:
-                    temp[v] = value
+            try:
+                value = item.get(k)
+                if value:
+                    if k == '%P':
+                        temp['SP'], temp['EP'] = to_pages(value)
+                    elif k == '%0':
+                        temp[v] = type_mapping[value.split(' ')[0]]
+                    elif k == '%N':
+                        temp[v] = month_abbr[int(value)]
+                    else:
+                        temp[v] = value
 
-                if temp['TY'] == 'THES':
-                    temp['PB'] = item.get('%I')
-                    temp['JO'] = item.get('%I')
+                    if temp['TY'] == 'THES':
+                        temp['PB'] = item.get('%I')
+                        temp['JO'] = item.get('%I')
+            except Exception as e:
+                print('Failed to extract meta from endnote record.')
+                print('endnote record: {}, current key: {}'.format(
+                    str(item), k
+                ))
+                print(str(e))
         temp['ER'] = ''
 
         return to_entry(temp)
@@ -130,7 +142,7 @@ def adapter(adp_name):
     return {'endnote': endnote}[adp_name]
 
 
-def dump(orig_file_name, lines):
+def dump(orig_file_name, lines, replace=False):
     """Dump file
 
     Args:
@@ -140,6 +152,11 @@ def dump(orig_file_name, lines):
     Returns:
         (str): file path
     """
+    if replace:
+        with open(orig_file_name, 'w+', encoding='utf-8') as f:
+            f.writelines(lines)
+        return orig_file_name
+
     head, tail = split(orig_file_name)
     fp = None
     while True:
@@ -147,16 +164,17 @@ def dump(orig_file_name, lines):
         fp = join(head, tail)
         if not exists(fp):
             break
-    with open(join(head, tail), 'w+', encoding='utf-8') as f:
+    with open(fp, 'w+', encoding='utf-8') as f:
         f.writelines(lines)
     return fp
 
 
-def converter(filepath):
+def converter(filepath, replace=False):
     """converter
 
     Args:
         filepath: (str)
+        replace: (boolean) True to replace original file
 
     Returns:
         dumpfile_path, item_count
@@ -168,7 +186,7 @@ def converter(filepath):
         all_lines += ris_entry
         item_count += 1
     assert len(all_lines) > 3
-    return dump(filepath, all_lines), item_count
+    return dump(filepath, all_lines, replace=replace), item_count
 
 
 if __name__ == "__main__":

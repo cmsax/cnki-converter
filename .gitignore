@@ -7,3 +7,5 @@ dist-back*
 .python-version
 !build.sh
 *.spec
+
+env

@@ -4,7 +4,13 @@
 
 ## 用法
 
-使用 python3 运行本脚本
+### 直接访问网页
+
+[CNKI Converter](https://tools.papers.ink/converter)
+
+### CLI
+
+到 yigesamo 文件夹，然后使用 python3 运行脚本
 
 ```bash
 python3 cli.py --help

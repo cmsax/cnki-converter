@@ -142,7 +142,7 @@ def adapter(adp_name):
     return {'endnote': endnote}[adp_name]
 
 
-def dump(orig_file_name, lines):
+def dump(orig_file_name, lines, replace=False):
     """Dump file
 
     Args:
@@ -152,6 +152,11 @@ def dump(orig_file_name, lines):
     Returns:
         (str): file path
     """
+    if replace:
+        with open(orig_file_name, 'w+', encoding='utf-8') as f:
+            f.writelines(lines)
+        return orig_file_name
+
     head, tail = split(orig_file_name)
     fp = None
     while True:
@@ -164,11 +169,12 @@ def dump(orig_file_name, lines):
     return fp
 
 
-def converter(filepath):
+def converter(filepath, replace=False):
     """converter
 
     Args:
         filepath: (str)
+        replace: (boolean) True to replace original file
 
     Returns:
         dumpfile_path, item_count
@@ -180,7 +186,7 @@ def converter(filepath):
         all_lines += ris_entry
         item_count += 1
     assert len(all_lines) > 3
-    return dump(filepath, all_lines), item_count
+    return dump(filepath, all_lines, replace=replace), item_count
 
 
 if __name__ == "__main__":

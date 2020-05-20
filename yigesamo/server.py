@@ -9,7 +9,9 @@ import os
 import time
 import uvicorn
 
-from fastapi import BackgroundTasks, FastAPI, File, UploadFile, Response
+from fastapi import (
+    BackgroundTasks, FastAPI, File, UploadFile, Response, HTTPException
+)
 from fastapi.responses import FileResponse, RedirectResponse
 from uuid import uuid4
 
@@ -55,7 +57,10 @@ class Helper:
             f.write(text_content)
 
         # here convert user post text
-        converter(path, True)
+        try:
+            converter(path, True)
+        except Exception as e:
+            return HTTPException(418, "I'm a teapot.")
 
         return RedirectResponse(
             '/result?q={}'.format(path),
@@ -64,6 +69,9 @@ class Helper:
 
     @classmethod
     def get_file_response(cls, q):
+        if not os.path.exists(q):
+            return HTTPException(404, 'file not found')
+
         return FileResponse(
             path=q,
             media_type='application/octet-stream',
@@ -71,7 +79,7 @@ class Helper:
         )
 
 
-@app.get('/convert')
+@app.get('/converter')
 def web_app():
     return Response(
         content=HTML.replace('VERSION', __version__),
@@ -79,7 +87,7 @@ def web_app():
     )
 
 
-@app.post('/convert')
+@app.post('/converter')
 async def convert_upload_file(file: UploadFile = File(...)):
     file_content = await file.read()
     return Helper.make_file_response(file_content)
@@ -94,7 +102,7 @@ async def get_result(q, background_tasks: BackgroundTasks):
 
 @app.get('/')
 async def health():
-    return 'service ok'
+    return RedirectResponse('/docs')
 
 
 def start_server():

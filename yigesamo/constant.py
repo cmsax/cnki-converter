@@ -48,7 +48,7 @@ HTML = """<!--// '_' //-->
     const file = document.querySelector('[type=file]').files[0]
     const formData = new FormData()
     formData.append('file', file)
-    fetch('convert', { method: 'POST', body: formData }).then(res => {
+    fetch('converter', { method: 'POST', body: formData }).then(res => {
       window.location = res.url
     })
   }

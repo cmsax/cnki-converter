@@ -69,7 +69,12 @@ class Helper:
 
     @classmethod
     def get_file_response(cls, q):
-        if not os.path.exists(q):
+        # prevent internal file
+        if any(
+            '/' in q,
+            not q.endswith('ris'),
+            not os.path.exists(q)
+        ):
             return HTTPException(404, 'file not found')
 
         return FileResponse(

@@ -9,3 +9,4 @@ dist-back*
 *.spec
 
 env
+temp

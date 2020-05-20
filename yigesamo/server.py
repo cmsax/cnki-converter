@@ -27,6 +27,7 @@ app = FastAPI(
 )
 
 LOGGER = logging.getLogger(__name__)
+TEMP_FILE_DIR = 'temp'
 
 
 class Helper:
@@ -37,22 +38,30 @@ class Helper:
         )
 
     @staticmethod
-    def remove_temp_file(q):
+    def get_path(file_name):
+        return os.path.join(TEMP_FILE_DIR, file_name)
+
+    @classmethod
+    def remove_temp_file(cls, q):
         """Remove user content.
         """
+        path = cls.get_path(file_name=q)
         # sleep 30s to let user download file
         time.sleep(30)
-        if os.path.exists(q):
-            os.remove(q)
-            LOGGER.info('file {} removed'.format(q))
+        if os.path.exists(path):
+            os.remove(path)
+            LOGGER.info('file {} removed'.format(path))
         else:
-            LOGGER.info('file {} not exists'.format(q))
+            LOGGER.info('file {} not exists'.format(path))
 
     @classmethod
     def make_file_response(cls, text_content):
         """Redirect to file download page.
         """
-        path = cls.get_random_file_name()
+        file_name = cls.get_random_file_name()
+        path = cls.get_path(file_name)
+        LOGGER.info('path: {}'.format(path))
+
         with open(path, 'wb') as f:
             f.write(text_content)
 
@@ -60,25 +69,21 @@ class Helper:
         try:
             converter(path, True)
         except Exception as e:
-            return HTTPException(418, "I'm a teapot.")
+            raise HTTPException(418, "I'm a teapot.")
 
         return RedirectResponse(
-            '/result?q={}'.format(path),
+            '/result?q={}'.format(file_name),
             status_code=307
         )
 
     @classmethod
     def get_file_response(cls, q):
-        # prevent internal file
-        if any(
-            '/' in q,
-            not q.endswith('ris'),
-            not os.path.exists(q)
-        ):
-            return HTTPException(404, 'file not found')
+        path = cls.get_path(file_name=q)
+        if not os.path.exists(path):
+            raise HTTPException(404, 'file not found')
 
         return FileResponse(
-            path=q,
+            path=path,
             media_type='application/octet-stream',
             filename='convert_result_{}.ris'.format(q.split('_')[0])
         )
@@ -107,10 +112,13 @@ async def get_result(q, background_tasks: BackgroundTasks):
 
 @app.get('/')
 async def health():
-    return RedirectResponse('/docs')
+    return RedirectResponse('/converter')
 
 
 def start_server():
+    if not os.path.exists(TEMP_FILE_DIR):
+        os.mkdir(TEMP_FILE_DIR)
+
     LOGGER.info('starting server...')
     uvicorn.run(app, host='0.0.0.0', port=5000, log_level='info')
 

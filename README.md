@@ -6,7 +6,7 @@
 
 ### 直接访问网页
 
-[CNKI Converter](https://tools.unoiou.com/converter)
+[CNKI Converter](https://tools.unoiou.com/convert)
 
 ### CLI
 
